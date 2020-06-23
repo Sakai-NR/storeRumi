@@ -51,6 +51,7 @@
             <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <connections>
                 <outlet property="menuName" destination="Hwz-o7-adQ" id="SOK-ju-ANk"/>
+                <outlet property="menuPricelabel" destination="RjO-bE-qeB" id="R7N-Ok-4lF"/>
             </connections>
             <point key="canvasLocation" x="-68.115942028985515" y="57.589285714285708"/>
         </tableViewCell>

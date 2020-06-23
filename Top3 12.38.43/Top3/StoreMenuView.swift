@@ -21,6 +21,7 @@ extension StoreMenuViewDelegate {
 class StoreMenuView: BaseView {
     weak var delegate: StoreMenuViewDelegate? = nil
     var menuList : [String] = ["MenuName","MenuName","MenuName","MenuName","MenuName","MenuName","MenuName","MenuName","MenuName","MenuName","MenuName"]
+    var menuPrice : [String] = ["￥1,000","￥2,000","￥3,000","￥","￥","￥","￥","￥","￥","￥","￥"]
     @IBOutlet weak var storeMenuTableView: UITableView!
 }
 
@@ -30,6 +31,7 @@ extension StoreMenuView {
         super.awakeFromNib()
         loadTableViewCellFromXib(tableView: storeMenuTableView, cellName: "StoreMenuTableViewCell")
         storeMenuTableView.dataSource = self
+        storeMenuTableView.delegate = self
     }
 }
 
@@ -42,6 +44,7 @@ extension StoreMenuView:UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell : StoreMenuTableViewCell = storeMenuTableView.dequeueReusableCell(withIdentifier: "StoreMenuTableViewCell", for: indexPath)as? StoreMenuTableViewCell else {return StoreMenuTableViewCell()}
         cell.menuName.text = menuList[indexPath.row]
+        cell.menuPricelabel.text = menuPrice[indexPath.row]
         return cell
     }
 }
