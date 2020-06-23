@@ -68,14 +68,14 @@ extension TopMainViewController:MaskViewDelegate{
 }
 extension TopMainViewController:MenuViewDelegate{
     func selectedRow(indexPath: IndexPath) {
+        closeMenu()
+        
         switch indexPath.row {
         case 0:
-            closeMenu()
 //            openMemberButton()
             closeStoreMenu()
             
         case 1:
-            closeMenu()
             openStoreMenu()
 //            openMemberButton()
             
@@ -92,6 +92,12 @@ extension TopMainViewController:BackViewDelegate{
 }
 extension TopMainViewController:StoreMenuViewDelegate{
     func didmenuSelect(indexpath: IndexPath) {
+//        switch indexpath.row {
+//        case 0:
+            
+//        default:
+//
+//        }
         
     }
 }

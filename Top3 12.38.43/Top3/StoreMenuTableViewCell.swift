@@ -21,6 +21,7 @@ extension StoreMenuTableViewCellDelegate {
 class StoreMenuTableViewCell: BaseTableViewCell {
     weak var delegate: StoreMenuTableViewCellDelegate? = nil
     @IBOutlet weak var menuName: UILabel!
+    @IBOutlet weak var menuPricelabel: UILabel!
     
 }
 
