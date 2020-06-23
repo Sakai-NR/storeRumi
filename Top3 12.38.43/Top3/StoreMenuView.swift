@@ -21,7 +21,7 @@ extension StoreMenuViewDelegate {
 class StoreMenuView: BaseView {
     weak var delegate: StoreMenuViewDelegate? = nil
     var menuList : [String] = ["MenuName","MenuName","MenuName","MenuName","MenuName","MenuName","MenuName","MenuName","MenuName","MenuName","MenuName"]
-    var menuPrice : [String] = ["￥1,000","￥2,000","￥3,000","￥4,000","￥","￥","￥","￥","￥","￥","￥"]
+    var menuPrice : [String] = ["￥1,000","￥2,000","￥3,000","￥4,000","￥5,000","￥6,000","￥7,000","￥8,000","￥9,000","￥10,000","￥11,000"]
     @IBOutlet weak var storeMenuTableView: UITableView!
 }
 
