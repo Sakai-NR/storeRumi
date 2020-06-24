@@ -20,12 +20,17 @@ extension StoreMenuDetailsViewDelegate {
 // MARK: - Property
 class StoreMenuDetailsView: BaseView {
     weak var delegate: StoreMenuDetailsViewDelegate? = nil
+
+    @IBOutlet weak var menuDatailView: UIView!
 }
 
 // MARK: - Life cycle
 extension StoreMenuDetailsView {
     override func awakeFromNib() {
         super.awakeFromNib()
+        MenuDatailCornerR()
+
+        
     }
 }
 
@@ -36,6 +41,11 @@ extension StoreMenuDetailsView {
 
 // MARK: - method
 extension StoreMenuDetailsView {
+//    Viewの角丸
+    func MenuDatailCornerR(){
+        menuDatailView.layer.cornerRadius = 10
+    }
+    
     
 }
 
