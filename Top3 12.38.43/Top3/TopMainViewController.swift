@@ -69,7 +69,7 @@ extension TopMainViewController:MaskViewDelegate{
 extension TopMainViewController:MenuViewDelegate{
     func selectedRow(indexPath: IndexPath) {
         closeMenu()
-        
+        closeAllView()
         switch indexPath.row {
         case 0:
 //            openMemberButton()
@@ -215,6 +215,12 @@ extension TopMainViewController {
     func closeStoreMenuWidth(){
         self.storeMenuViewWidth.constant = WIDTH * zero
         updataMemuView()
+    }
+    
+//    cloceAllView
+    func closeAllView(){
+        closeMenuViewWidth()
+        closeStoreMenuWidth()
     }
 }
 
