@@ -40,6 +40,7 @@ extension TopMainViewController {
         setDelegate()
         closeMenu()
         closeStoreMenu()
+       
     }
     
     override func viewDidLoad() {
