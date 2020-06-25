@@ -20,7 +20,7 @@ extension StoreMenuViewDelegate {
 // MARK: - Property
 class StoreMenuView: BaseView {
     weak var delegate: StoreMenuViewDelegate? = nil
-    var menuList : [String] = ["MenuName0","MenuName1","MenuName2","MenuName3","MenuName4","MenuName5","MenuName6","MenuName","MenuName","MenuName","MenuName"]
+    var menuList : [String] = ["MenuName0","MenuName1","MenuName2","MenuName3","MenuName4","MenuName5","MenuName6","MenuName7","MenuName8","MenuName9","MenuName10"]
     var menuPrice : [String] = ["￥1,000","￥2,000","￥3,000","￥4,000","￥5,000","￥6,000","￥7,000","￥8,000","￥9,000","￥10,000","￥11,000"]
     @IBOutlet weak var storeMenuTableView: UITableView!
 }
