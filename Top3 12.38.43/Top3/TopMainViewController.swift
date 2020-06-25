@@ -79,21 +79,15 @@ extension TopMainViewController:MaskViewDelegate{
 }
 extension TopMainViewController:MenuViewDelegate{
     func selectedRow(indexPath: IndexPath) {
-//        storeMenuDatailsUpdata(index: indexPath.row)
         closeMenu()
         closeAllView()
         switch indexPath.row {
         case 0:
-//            openMemberButton()
             closeStoreMenu()
-            
         case 1:
             openStoreMenu()
-//            openMemberButton()
-            
         default:
             closeMenu()
-//            openMemberButton()
         }
     }
 }
@@ -107,17 +101,22 @@ extension TopMainViewController:StoreMenuViewDelegate{
         storeMenuDatailsUpdata(index: indexpath.row)
         openBackButton()
         closeMenuButton()
+        closeStoreMenu()
         switch indexpath.row {
         case 0:
-            closeStoreMenu()
             openStoreMenuDetails()
         case 1:
             openStoreMenuDetails()
-            closeStoreMenu()
         case 2:
             openStoreMenuDetails()
-            closeStoreMenu()
-            
+        case 3:
+            openStoreMenuDetails()
+        case 4:
+            openStoreMenuDetails()
+        case 5:
+            openStoreMenuDetails()
+        case 6:
+            openStoreMenuDetails()
         default:
             openStoreMenuDetails()
 
@@ -271,8 +270,26 @@ extension TopMainViewController {
         self.storeMenuDatailsView.menuDatailName.text = "MenuName0"
        case 1:
           self.storeMenuDatailsView.menuDatailName.text = "MenuName1"
+       case 2:
+          self.storeMenuDatailsView.menuDatailName.text = "MenuName2"
+       case 3:
+          self.storeMenuDatailsView.menuDatailName.text = "MenuName3"
+       case 4:
+          self.storeMenuDatailsView.menuDatailName.text = "MenuName4"
+       case 5 :
+        self.storeMenuDatailsView.menuDatailName.text = "MenuName5"
+       case 6 :
+        self.storeMenuDatailsView.menuDatailName.text = "MenuName6"
+       case 7 :
+        self.storeMenuDatailsView.menuDatailName.text = "MenuName7"
+       case 8 :
+        self.storeMenuDatailsView.menuDatailName.text = "MenuName8"
+       case 9:
+       self.storeMenuDatailsView.menuDatailName.text = "MenuName9"
+       case 10 :
+        self.storeMenuDatailsView.menuDatailName.text = "MenuName10"
        default:
-           self.storeMenuDatailsView.menuDatailName.text = "MenuName2"
+           self.storeMenuDatailsView.menuDatailName.text = "MenuName11"
         }
     }
 //    BuckbottonOutlet
