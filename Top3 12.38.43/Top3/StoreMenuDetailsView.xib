@@ -80,6 +80,8 @@
             <constraints>
                 <constraint firstItem="Qsb-ug-Idw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="HnJ-KO-kDM"/>
                 <constraint firstItem="Bpm-xf-q6G" firstAttribute="top" secondItem="Qsb-ug-Idw" secondAttribute="bottom" constant="30" id="N90-pE-tjo"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Bpm-xf-q6G" secondAttribute="trailing" constant="30" id="k3r-oL-a5D"/>
+                <constraint firstItem="Bpm-xf-q6G" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="qla-cM-L6m"/>
                 <constraint firstItem="Bpm-xf-q6G" firstAttribute="width" secondItem="Qsb-ug-Idw" secondAttribute="width" id="rZj-3b-Tc9"/>
                 <constraint firstItem="Bpm-xf-q6G" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tm6-EZ-BnT"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Qsb-ug-Idw" secondAttribute="trailing" constant="30" id="uv9-V8-kmC"/>

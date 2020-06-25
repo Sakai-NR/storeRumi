@@ -25,6 +25,7 @@ class StoreMenuDetailsView: BaseView {
     @IBOutlet weak var menuDatailName: UILabel!
     @IBOutlet weak var menuDatailsImageView: UIImageView!
     @IBOutlet weak var menuDatailsLabel: UILabel!
+
 }
 
 // MARK: - Life cycle
@@ -44,11 +45,12 @@ extension StoreMenuDetailsView {
 
 // MARK: - method
 extension StoreMenuDetailsView {
-//    Viewの角丸
+//menuDetailsView
+    //    Viewの角丸
     func MenuDatailCornerR(){
         menuDatailView.layer.cornerRadius = 10
     }
-    
+//    
     
 }
 
