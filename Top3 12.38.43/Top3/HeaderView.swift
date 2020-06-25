@@ -13,7 +13,7 @@ import PGFramework
 protocol HeaderViewDelegate: NSObjectProtocol{
     func menuButton(_ sender: UIButton)
     func memberButton(_ sender: UIButton)
-    
+    func BackButton(_ sender: UIButton)
 }
 
 extension HeaderViewDelegate {
@@ -32,6 +32,11 @@ class HeaderView: BaseView {
     }
     @IBOutlet weak var storeLabbel: UILabel!
     var storeName = String("RUMINAS")
+    @IBAction func BackButton(_ sender: UIButton) {
+        delegate?.BackButton(sender)
+    }
+    @IBOutlet weak var backButtonOutlet: UIButton!
+    @IBOutlet weak var menuButtonOutlet: UIButton!
 }
 
 // MARK: - Life cycle

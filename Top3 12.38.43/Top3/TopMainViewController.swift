@@ -42,6 +42,8 @@ extension TopMainViewController {
         setDelegate()
         closeMenu()
         closeStoreMenu()
+        closeStoreMenuDetails()
+        closeBuckButton()
        
     }
     
@@ -57,7 +59,7 @@ extension TopMainViewController {
 extension TopMainViewController:HeaderViewDelegate{
     func menuButton(_ sender: UIButton) {
         openMenu()
-        updataMemuView()
+        updataView()
 //        openbackTopButton()
         closeMemberButton()
 //        closeStoreMenu()
@@ -65,12 +67,19 @@ extension TopMainViewController:HeaderViewDelegate{
     func memberButton(_ sender: UIButton) {
         closeStoreMenu()
     }
+    func BackButton(_ sender: UIButton) {
+        closeStoreMenuDetails()
+        openStoreMenu()
+        closeBuckButton()
+        openMenuButton()
+    }
 }
 extension TopMainViewController:MaskViewDelegate{
     
 }
 extension TopMainViewController:MenuViewDelegate{
     func selectedRow(indexPath: IndexPath) {
+//        storeMenuDatailsUpdata(index: indexPath.row)
         closeMenu()
         closeAllView()
         switch indexPath.row {
@@ -95,12 +104,24 @@ extension TopMainViewController:BackViewDelegate{
 }
 extension TopMainViewController:StoreMenuViewDelegate{
     func didmenuSelect(indexpath: IndexPath) {
-//        switch indexpath.row {
-//        case 0:
+        storeMenuDatailsUpdata(index: indexpath.row)
+        openBackButton()
+        closeMenuButton()
+        switch indexpath.row {
+        case 0:
+            closeStoreMenu()
+            openStoreMenuDetails()
+        case 1:
+            openStoreMenuDetails()
+            closeStoreMenu()
+        case 2:
+            openStoreMenuDetails()
+            closeStoreMenu()
             
-//        default:
-//
-//        }
+        default:
+            openStoreMenuDetails()
+
+        }
         
     }
 }
@@ -123,12 +144,13 @@ extension TopMainViewController {
         storeMenuView.delegate = self
         
     }
-    
-    func updataMemuView(){
+//    Viewのアップデート
+    func updataView(){
         view.layoutIfNeeded()
         view.updateConstraints()
     }
-//AppMenu
+//MainMenu
+//    MainMenuOpen
     func openMenu(){
         UIView.animate(withDuration: animationTime) {
             self.openMenuViewWidth()
@@ -137,6 +159,7 @@ extension TopMainViewController {
 //            self.openbackTopButton()
         }
     }
+//    MainMenuClose
     func closeMenu(){
         UIView.animate(withDuration: animationTime) {
             self.closeMenuViewWidth()
@@ -144,27 +167,14 @@ extension TopMainViewController {
             self.closebackView2Width()
         }
     }
-    
-//StoreMenuのアニメーション
-    func openStoreMenu(){
-        UIView.animate(withDuration: animationTime) {
-            self.openStoreMenuWidth()
-        }
-    }
-    func closeStoreMenu(){
-        UIView.animate(withDuration: animationTime) {
-            self.closeStoreMenuWidth()
-        }
-    }
-    
-//   menuWidth
+//   MainMenuWidth
     func closeMenuViewWidth(){
         self.menuViewWidth.constant = WIDTH * zero
-        updataMemuView()
+        updataView()
     }
     func openMenuViewWidth(){
         self.menuViewWidth.constant = WIDTH * openWidth
-        updataMemuView()
+        updataView()
     }
 //    maskAlpha
     func closeMaskAlpha(){
@@ -184,7 +194,7 @@ extension TopMainViewController {
 //  backView
     func closebackViewWidht(){
         self.backViewWidth.constant = WIDTH * zero
-        updataMemuView()
+        updataView()
         
   }
     func closebackTopButton(){
@@ -197,11 +207,11 @@ extension TopMainViewController {
 //    backView2
     func closebackView2Width(){
         self.backView2Width.constant = WIDTH * zero
-        updataMemuView()
+        updataView()
     }
     func openbackView2Width(){
         self.backView2Width.constant = WIDTH * funllWidth
-        updataMemuView()
+        updataView()
         self.backView2.alpha = maskAlpha
     }
     
@@ -213,24 +223,78 @@ extension TopMainViewController {
 //    openStoreMenu
     func openStoreMenuWidth(){
         self.storeMenuViewWidth.constant = WIDTH * funllWidth
-        updataMemuView()
+        updataView()
     }
 //    closeStoreMenu
     func closeStoreMenuWidth(){
         self.storeMenuViewWidth.constant = WIDTH * zero
-        updataMemuView()
+        updataView()
+    }
+//    StoreMenuのアニメーション
+    func openStoreMenu(){
+        UIView.animate(withDuration: animationTime) {
+            self.openStoreMenuWidth()
+        }
+    }
+    func closeStoreMenu(){
+        UIView.animate(withDuration: animationTime) {
+            self.closeStoreMenuWidth()
+        }
+    }
+    
+//StoreMenuDetails
+//    openStoreMenuDetails
+    func openStoreMenuDatailsWidth(){
+        self.storeMenuDatailsWidth.constant = WIDTH * funllWidth
+        updataView()
+    }
+    func closeStoreMenuDatailsWidth(){
+        self.storeMenuDatailsWidth.constant = WIDTH * zero
+        updataView()
+    }
+//    OpenStoreMenuDatailsAnimation
+    func openStoreMenuDetails(){
+        UIView.animate(withDuration: animationTime) {
+            self.openStoreMenuDatailsWidth()
+        }
+    }
+//    CloseStoreMenuDatailsAnimation
+    func closeStoreMenuDetails(){
+        UIView.animate(withDuration: animationTime) {
+            self.closeStoreMenuDatailsWidth()
+        }
+    }
+//    storeMenuDatailsUpdata
+    func storeMenuDatailsUpdata(index : Int){
+       switch index {
+       case 0 :
+        self.storeMenuDatailsView.menuDatailName.text = "MenuName0"
+       case 1:
+          self.storeMenuDatailsView.menuDatailName.text = "MenuName1"
+       default:
+           self.storeMenuDatailsView.menuDatailName.text = "MenuName2"
+        }
+    }
+//    BuckbottonOutlet
+    func openBackButton(){
+        headerView.backButtonOutlet.isHidden = false
+    }
+    func closeBuckButton(){
+        headerView.backButtonOutlet.isHidden = true
+    }
+//   MenuButtonOutlet
+    func openMenuButton(){
+        headerView.menuButtonOutlet.isHidden = false
+    }
+    func closeMenuButton(){
+        headerView.menuButtonOutlet.isHidden = true
     }
     
 //    cloceAllView
     func closeAllView(){
         closeMenuViewWidth()
         closeStoreMenuWidth()
+        closeStoreMenuDetails()
     }
-//    storeMenuDatailsUpdata
-//    func sgtoreMenuDatailsUpdata(index : int){
-//        switch index {
-//
-//        }
-//    }
 }
 

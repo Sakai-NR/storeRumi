@@ -9,7 +9,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeaderView" customModule="Top3" customModuleProvider="target">
             <connections>
+                <outlet property="backButtonOutlet" destination="hvZ-Xg-KH5" id="aED-lr-Uxa"/>
                 <outlet property="hiddenMemberButton" destination="uyv-9v-LMq" id="XNK-zQ-PVW"/>
+                <outlet property="menuButtonOutlet" destination="qCp-vw-mqZ" id="Qnh-gE-3ml"/>
                 <outlet property="storeLabbel" destination="oHh-wo-RUz" id="yhU-Rg-FSR"/>
             </connections>
         </placeholder>
@@ -48,11 +50,22 @@
                         <action selector="memberButton:" destination="-1" eventType="touchUpInside" id="MtI-aD-u9N"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvZ-Xg-KH5">
+                    <rect key="frame" x="16" y="74.5" width="41.5" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="hvZ-Xg-KH5" secondAttribute="height" multiplier="1:1" id="2hX-Qh-WAn"/>
+                    </constraints>
+                    <state key="normal" title="Back"/>
+                    <connections>
+                        <action selector="BackButton:" destination="-1" eventType="touchUpInside" id="FUf-zC-DF3"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="oHh-wo-RUz" firstAttribute="height" secondItem="qCp-vw-mqZ" secondAttribute="height" id="0Y3-0E-9dL"/>
                 <constraint firstItem="qCp-vw-mqZ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.1" id="0e2-EY-7zA"/>
+                <constraint firstItem="hvZ-Xg-KH5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="2Gm-Bz-laz"/>
                 <constraint firstItem="uyv-9v-LMq" firstAttribute="height" secondItem="qCp-vw-mqZ" secondAttribute="height" id="4Nh-pZ-dzJ"/>
                 <constraint firstItem="qCp-vw-mqZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="CYo-ZR-P54"/>
                 <constraint firstItem="oHh-wo-RUz" firstAttribute="centerY" secondItem="qCp-vw-mqZ" secondAttribute="centerY" id="Ks0-j4-chU"/>
@@ -60,7 +73,9 @@
                 <constraint firstItem="oHh-wo-RUz" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.65" id="RRo-Ra-klI"/>
                 <constraint firstItem="uyv-9v-LMq" firstAttribute="centerY" secondItem="qCp-vw-mqZ" secondAttribute="centerY" id="aWg-fa-PCo"/>
                 <constraint firstItem="qCp-vw-mqZ" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="b8n-XP-7lY"/>
+                <constraint firstItem="hvZ-Xg-KH5" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.1" id="bZy-zj-nLa"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uyv-9v-LMq" secondAttribute="trailing" constant="16" id="nI1-rg-Gra"/>
+                <constraint firstItem="hvZ-Xg-KH5" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="ugH-0x-UZ6"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
