@@ -17,6 +17,8 @@
                 <outlet property="maskView" destination="aKH-Yd-bco" id="3Od-gY-Wog"/>
                 <outlet property="menuView" destination="ykp-nJ-aM7" id="pfs-CD-wiv"/>
                 <outlet property="menuViewWidth" destination="7Vf-SK-5x4" id="mmw-hy-CXG"/>
+                <outlet property="storeMenuDatailsView" destination="SIf-kA-gIO" id="B8M-I8-9ET"/>
+                <outlet property="storeMenuDatailsWidth" destination="1vY-G8-4Zm" id="yOg-6f-j6h"/>
                 <outlet property="storeMenuView" destination="OTQ-Bf-yPy" id="vEl-tr-unc"/>
                 <outlet property="storeMenuViewWidth" destination="b2M-ql-Gyr" id="chQ-XG-QMs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

@@ -9,7 +9,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoreMenuDetailsView" customModule="Top3" customModuleProvider="target">
             <connections>
+                <outlet property="menuDatailName" destination="igR-ov-msL" id="SbJ-bM-iR3"/>
                 <outlet property="menuDatailView" destination="Qsb-ug-Idw" id="Q0L-n2-hD0"/>
+                <outlet property="menuDatailsImageView" destination="LJB-6K-MGW" id="I5M-Mh-0kU"/>
+                <outlet property="menuDatailsLabel" destination="9nq-P2-lWI" id="XQH-1V-z84"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

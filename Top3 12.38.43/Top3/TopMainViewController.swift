@@ -22,6 +22,8 @@ class TopMainViewController: BaseViewController {
     @IBOutlet weak var backView2Width: NSLayoutConstraint!
     @IBOutlet weak var storeMenuView: StoreMenuView!
     @IBOutlet weak var storeMenuViewWidth: NSLayoutConstraint!
+    @IBOutlet weak var storeMenuDatailsView: StoreMenuDetailsView!
+    @IBOutlet weak var storeMenuDatailsWidth: NSLayoutConstraint!
     
 //    ０の数値設定。
     var zero : CGFloat = 0
@@ -119,6 +121,7 @@ extension TopMainViewController {
         backView.delegate = self
         backView2.delegate = self
         storeMenuView.delegate = self
+        
     }
     
     func updataMemuView(){
@@ -223,5 +226,11 @@ extension TopMainViewController {
         closeMenuViewWidth()
         closeStoreMenuWidth()
     }
+//    storeMenuDatailsUpdata
+//    func sgtoreMenuDatailsUpdata(index : int){
+//        switch index {
+//
+//        }
+//    }
 }
 

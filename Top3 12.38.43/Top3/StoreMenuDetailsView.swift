@@ -22,6 +22,9 @@ class StoreMenuDetailsView: BaseView {
     weak var delegate: StoreMenuDetailsViewDelegate? = nil
 
     @IBOutlet weak var menuDatailView: UIView!
+    @IBOutlet weak var menuDatailName: UILabel!
+    @IBOutlet weak var menuDatailsImageView: UIImageView!
+    @IBOutlet weak var menuDatailsLabel: UILabel!
 }
 
 // MARK: - Life cycle
