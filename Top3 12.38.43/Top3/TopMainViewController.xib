@@ -79,6 +79,13 @@
                         <constraint firstAttribute="width" constant="414" id="etd-OQ-e4P"/>
                     </constraints>
                 </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ry2-tx-jR2" customClass="StoreCouponTableViewController" customModule="Top3" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="100" width="414" height="796"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="414" id="aji-gR-Bt5"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -92,6 +99,8 @@
                 <constraint firstItem="SIf-kA-gIO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CUj-TF-JhX"/>
                 <constraint firstItem="jZ9-KK-S0C" firstAttribute="bottom" secondItem="Xcc-Yj-rcg" secondAttribute="bottom" id="ECS-t2-nb3"/>
                 <constraint firstItem="aKH-Yd-bco" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Mxt-B6-lPb"/>
+                <constraint firstAttribute="bottom" secondItem="ry2-tx-jR2" secondAttribute="bottom" id="NeK-1R-fSa"/>
+                <constraint firstItem="ry2-tx-jR2" firstAttribute="top" secondItem="m7D-hJ-1Yg" secondAttribute="bottom" id="U91-au-MPY"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="jWJ-KU-L4B" secondAttribute="bottom" id="URl-q1-mJY"/>
                 <constraint firstItem="m7D-hJ-1Yg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VpF-uy-dm0"/>
                 <constraint firstItem="aKH-Yd-bco" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="XsJ-x6-5le"/>
@@ -104,6 +113,7 @@
                 <constraint firstAttribute="bottom" secondItem="aKH-Yd-bco" secondAttribute="bottom" id="l75-7L-q5S"/>
                 <constraint firstItem="SIf-kA-gIO" firstAttribute="top" secondItem="m7D-hJ-1Yg" secondAttribute="bottom" id="lTY-qc-k8Y"/>
                 <constraint firstAttribute="bottom" secondItem="SIf-kA-gIO" secondAttribute="bottom" constant="34" id="s0H-Ad-7gY"/>
+                <constraint firstItem="ry2-tx-jR2" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="sHy-0K-kbt"/>
                 <constraint firstItem="jWJ-KU-L4B" firstAttribute="top" secondItem="m7D-hJ-1Yg" secondAttribute="bottom" id="vgW-Nf-5aH"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="m7D-hJ-1Yg" secondAttribute="trailing" id="xHb-JL-D1W"/>
                 <constraint firstItem="Xcc-Yj-rcg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="y6j-4w-wiL"/>

@@ -11,7 +11,7 @@ import PGFramework
 
 
 protocol StoreCouponTableViewControllerDelegate: NSObjectProtocol{
-    
+    func selectedCoupon(indexpath:IndexPath)
 }
 
 extension StoreCouponTableViewControllerDelegate {
@@ -31,6 +31,7 @@ extension StoreCouponTableViewController {
         super.awakeFromNib()
         loadTableViewCellFromXib(tableView:storeCouponTableView, cellName: "StoreCouponTableViewCell")
         storeCouponTableView.dataSource = self
+        storeCouponTableView.delegate = self
     }
 }
 
@@ -44,8 +45,11 @@ extension StoreCouponTableViewController:UITableViewDataSource {
         guard let cell: StoreCouponTableViewCell =  tableView.dequeueReusableCell(withIdentifier: "StoreCouponTableViewCell", for: indexPath)as? StoreCouponTableViewCell else{return UITableViewCell()}
         return cell
     }
-    
-    
+}
+extension StoreCouponTableViewController:UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        delegate?.selectedCoupon(indexpath: indexPath)
+    }
 }
 
 // MARK: - method
