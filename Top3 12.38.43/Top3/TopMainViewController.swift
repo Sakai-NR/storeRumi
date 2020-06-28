@@ -142,6 +142,7 @@ extension TopMainViewController {
         backView2.delegate = self
         storeMenuView.delegate = self
         
+        
     }
 //    Viewのアップデート
     func updataView(){
