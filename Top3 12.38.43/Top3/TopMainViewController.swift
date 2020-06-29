@@ -24,6 +24,9 @@ class TopMainViewController: BaseViewController {
     @IBOutlet weak var storeMenuViewWidth: NSLayoutConstraint!
     @IBOutlet weak var storeMenuDatailsView: StoreMenuDetailsView!
     @IBOutlet weak var storeMenuDatailsWidth: NSLayoutConstraint!
+    @IBOutlet weak var storeCouponView: StoreCouponTableViewController!
+    @IBOutlet weak var storeCouponViewWidth: NSLayoutConstraint!
+    
     
 //    ０の数値設定。
     var zero : CGFloat = 0
@@ -101,7 +104,8 @@ extension TopMainViewController:StoreMenuViewDelegate{
         storeMenuDatailsUpdata(index: indexpath.row)
         openBackButton()
         closeMenuButton()
-        closeStoreMenu()
+//        closeStoreMenu()
+        closeStoreMenuWidth()
         switch indexpath.row {
         case 0:
             openStoreMenuDetails()
@@ -293,6 +297,30 @@ extension TopMainViewController {
            self.storeMenuDatailsView.menuDatailName.text = "MenuName11"
         }
     }
+//    StoreMenu
+//    OpenStoreCoupon
+    func openStoreCouponWidth(){
+        self.storeCouponViewWidth.constant = WIDTH * funllWidth
+        updataView()
+    }
+//    closeStoreCouponWidrh
+    func closeStoreCouponWidth(){
+        self.storeCouponViewWidth.constant = WIDTH * zero
+        updataView()
+    }
+//
+    func openStoreCouponView(){
+        UIView.animate(withDuration: animationTime) {
+            self.openStoreCouponView()
+        }
+    }
+    func closeStoreCouponView(){
+        UIView.animate(withDuration: animationTime) {
+            self.closeStoreCouponWidth()
+        }
+    }
+    
+    
 //    BuckbottonOutlet
     func openBackButton(){
         headerView.backButtonOutlet.isHidden = false
@@ -313,6 +341,7 @@ extension TopMainViewController {
         closeMenuViewWidth()
         closeStoreMenuWidth()
         closeStoreMenuDetails()
+        closeStoreCouponWidth()
     }
 }
 
