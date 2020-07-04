@@ -47,6 +47,7 @@ extension TopMainViewController {
         closeStoreMenu()
         closeStoreMenuDetails()
         closeBuckButton()
+        closeStoreCouponView()
        
     }
     
@@ -89,6 +90,8 @@ extension TopMainViewController:MenuViewDelegate{
             closeStoreMenu()
         case 1:
             openStoreMenu()
+        case 2 :
+            openStoreCouponView()
         default:
             closeMenu()
         }
@@ -125,7 +128,6 @@ extension TopMainViewController:StoreMenuViewDelegate{
             openStoreMenuDetails()
 
         }
-        
     }
 }
 //tuikasita
@@ -311,7 +313,7 @@ extension TopMainViewController {
 //
     func openStoreCouponView(){
         UIView.animate(withDuration: animationTime) {
-            self.openStoreCouponView()
+            self.openStoreCouponWidth()
         }
     }
     func closeStoreCouponView(){
