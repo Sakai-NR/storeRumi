@@ -104,30 +104,33 @@ extension TopMainViewController:BackViewDelegate{
 }
 extension TopMainViewController:StoreMenuViewDelegate{
     func didmenuSelect(indexpath: IndexPath) {
-        storeMenuDatailsUpdata(index: indexpath.row)
-        openBackButton()
-        closeMenuButton()
+        let storeMenuDateilViewController = StoreMenuDateilViewController()
+        storeMenuDatailsUpdata(index: indexpath.row,vc: storeMenuDateilViewController)
+        transitionViewController(from: self, to: storeMenuDateilViewController)
+        animatorManager.navigationType = .slide_push
+//        openBackButton()
+//        closeMenuButton()
 //        closeStoreMenu()
-        closeStoreMenuWidth()
-        switch indexpath.row {
-        case 0:
-            openStoreMenuDetails()
-        case 1:
-            openStoreMenuDetails()
-        case 2:
-            openStoreMenuDetails()
-        case 3:
-            openStoreMenuDetails()
-        case 4:
-            openStoreMenuDetails()
-        case 5:
-            openStoreMenuDetails()
-        case 6:
-            openStoreMenuDetails()
-        default:
-            openStoreMenuDetails()
+//        closeStoreMenuWidth()
+//        switch indexpath.row {
+//        case 0:
+//            openStoreMenuDetails()
+//        case 1:
+//            openStoreMenuDetails()
+//        case 2:
+//            openStoreMenuDetails()
+//        case 3:
+//            openStoreMenuDetails()
+//        case 4:
+//            openStoreMenuDetails()
+//        case 5:
+//            openStoreMenuDetails()
+//        case 6:
+//            openStoreMenuDetails()
+//        default:
+//            openStoreMenuDetails()
 
-        }
+//        }
     }
 }
 //tuikasita
@@ -271,32 +274,32 @@ extension TopMainViewController {
         }
     }
 //    storeMenuDatailsUpdata
-    func storeMenuDatailsUpdata(index : Int){
+    func storeMenuDatailsUpdata(index : Int, vc : StoreMenuDateilViewController){
        switch index {
        case 0 :
-        self.storeMenuDatailsView.menuDatailName.text = "MenuName0"
+          vc.menuDetailName = "MenuName0"
        case 1:
-          self.storeMenuDatailsView.menuDatailName.text = "MenuName1"
+          vc.menuDetailName = "MenuName1"
        case 2:
-          self.storeMenuDatailsView.menuDatailName.text = "MenuName2"
+          vc.menuDetailName = "MenuName2"
        case 3:
-          self.storeMenuDatailsView.menuDatailName.text = "MenuName3"
+          vc.menuDetailName = "MenuName3"
        case 4:
-          self.storeMenuDatailsView.menuDatailName.text = "MenuName4"
+          vc.menuDetailName = "MenuName4"
        case 5 :
-        self.storeMenuDatailsView.menuDatailName.text = "MenuName5"
+          vc.menuDetailName = "MenuName5"
        case 6 :
-        self.storeMenuDatailsView.menuDatailName.text = "MenuName6"
+          vc.menuDetailName = "MenuName6"
        case 7 :
-        self.storeMenuDatailsView.menuDatailName.text = "MenuName7"
+          vc.menuDetailName = "MenuName7"
        case 8 :
-        self.storeMenuDatailsView.menuDatailName.text = "MenuName8"
+          vc.menuDetailName = "MenuName8"
        case 9:
-       self.storeMenuDatailsView.menuDatailName.text = "MenuName9"
+          vc.menuDetailName = "MenuName9"
        case 10 :
-        self.storeMenuDatailsView.menuDatailName.text = "MenuName10"
+          vc.menuDetailName = "MenuName10"
        default:
-           self.storeMenuDatailsView.menuDatailName.text = "MenuName11"
+           vc.menuDetailName = "MenuName11"
         }
     }
 //    StoreMenu

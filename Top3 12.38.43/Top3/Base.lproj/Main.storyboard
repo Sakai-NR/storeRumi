@@ -21,17 +21,16 @@
         <!--Item-->
         <scene sceneID="hwV-Uw-Bai">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SNL-iz-HPp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationController id="CV4-J6-P6k" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="CV4-J6-P6k" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="xVY-a7-0xK"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tth-vy-3Wf">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6Mh-yB-Clg"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SNL-iz-HPp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1077" y="116"/>
         </scene>

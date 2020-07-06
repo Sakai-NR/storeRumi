@@ -50,6 +50,9 @@ extension StoreMenuDetailsView {
     func MenuDatailCornerR(){
         menuDatailView.layer.cornerRadius = 10
     }
+    func detailViewUpdata(name:String){
+        menuDatailName.text = name
+    }
 //    
     
 }
