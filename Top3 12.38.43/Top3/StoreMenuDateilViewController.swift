@@ -38,12 +38,12 @@ extension StoreMenuDateilViewController {
 // MARK: - Protocol
 extension StoreMenuDateilViewController:HeaderViewDelegate {
     func menuButton(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: false)
         animatorManager.navigationType = .slide_pop
     }
 
     func memberButton(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: false)
         animatorManager.navigationType = .slide_pop
     }
 
