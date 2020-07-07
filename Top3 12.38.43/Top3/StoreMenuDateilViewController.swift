@@ -43,7 +43,7 @@ extension StoreMenuDateilViewController:HeaderViewDelegate {
     }
 
     func memberButton(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
+        navigationController?.popViewController(animated: false)
         animatorManager.navigationType = .slide_pop
     }
 
