@@ -21,7 +21,10 @@ extension StoreCouponTableViewControllerDelegate {
 class StoreCouponTableViewController: BaseView {
     weak var delegate: StoreCouponTableViewControllerDelegate? = nil
     @IBOutlet weak var storeCouponTableView: UITableView!
-    
+    var couponName :[String] = ["マッサージ","エステ","","","","",""]
+    var couponStart : [String] = ["","","",""]
+    var couponEnd : [String] = ["","","",""]
+    var couponDetail : [String] = ["","",""]
     
 }
 
@@ -38,7 +41,7 @@ extension StoreCouponTableViewController {
 // MARK: - Protocol
 extension StoreCouponTableViewController:UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return couponName.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

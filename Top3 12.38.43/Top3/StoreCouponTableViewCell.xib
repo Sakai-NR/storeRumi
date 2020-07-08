@@ -72,6 +72,13 @@
                     <constraint firstItem="g2T-J3-vPP" firstAttribute="top" secondItem="jOH-RJ-s4d" secondAttribute="top" constant="16" id="vTU-3U-sXF"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="couponDetailLabel" destination="hju-yE-Wdo" id="Ahg-bf-kiL"/>
+                <outlet property="couponEndLabel" destination="oJY-cg-GBT" id="uUV-zO-WEp"/>
+                <outlet property="couponImageView" destination="ar9-49-ws5" id="Dze-Ls-Qoy"/>
+                <outlet property="couponNameLabel" destination="g2T-J3-vPP" id="hZM-GZ-vNH"/>
+                <outlet property="couponStartLabel" destination="NEI-li-p3v" id="hGE-PL-zWv"/>
+            </connections>
             <point key="canvasLocation" x="-252.89855072463769" y="63.616071428571423"/>
         </tableViewCell>
     </objects>
