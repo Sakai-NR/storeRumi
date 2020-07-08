@@ -20,6 +20,11 @@ extension StoreCouponTableViewCellDelegate {
 // MARK: - Property
 class StoreCouponTableViewCell: BaseTableViewCell {
     weak var delegate: StoreCouponTableViewCellDelegate? = nil
+    @IBOutlet weak var couponImageView: UIImageView!
+    @IBOutlet weak var couponNameLabel: UILabel!
+    @IBOutlet weak var couponStartLabel: UILabel!
+    @IBOutlet weak var couponEndLabel: UILabel!
+    @IBOutlet weak var couponDetailLabel: UILabel!
 }
 
 // MARK: - Life cycle

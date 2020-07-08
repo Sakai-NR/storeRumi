@@ -36,7 +36,6 @@ class TopMainViewController: BaseViewController {
     var openWidth : CGFloat  = 0.7
     var maskAlpha : CGFloat  = 0.6
     var funllWidth : CGFloat = 1.0
-    
 }
 // MARK: - Life cycle
 extension TopMainViewController {
@@ -130,9 +129,14 @@ extension TopMainViewController:StoreMenuViewDelegate{
 //        default:
 //            openStoreMenuDetails()
 
-//        }
+        }
+   }
+extension TopMainViewController:StoreCouponTableViewControllerDelegate{
+    func selectedCoupon(indexpath: IndexPath) {
+ 
     }
 }
+
 //tuikasita
 extension TopMainViewController:BsckView2Delegate{
     func backButton2(_ sender: UIButton) {
@@ -150,6 +154,7 @@ extension TopMainViewController {
         backView.delegate = self
         backView2.delegate = self
         storeMenuView.delegate = self
+        storeCouponView.delegate = self
         
         
     }
