@@ -32,6 +32,7 @@ class HeaderView: BaseView {
     }
     @IBOutlet weak var storeLabbel: UILabel!
     var storeName = String("RUMINAS")
+    
     @IBAction func BackButton(_ sender: UIButton) {
         delegate?.BackButton(sender)
     }

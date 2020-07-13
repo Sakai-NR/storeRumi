@@ -31,6 +31,10 @@
 		8FC6D59324A5786600C7E83A /* StoreCouponTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FC6D59124A5786600C7E83A /* StoreCouponTableViewCell.xib */; };
 		8FD03DBA24A24BD400217B54 /* StoreMenuDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD03DB824A24BD400217B54 /* StoreMenuDetailsView.swift */; };
 		8FD03DBB24A24BD400217B54 /* StoreMenuDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD03DB924A24BD400217B54 /* StoreMenuDetailsView.xib */; };
+		8FDC46D024B7D77200A9DE5A /* StoreCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC46CE24B7D77200A9DE5A /* StoreCouponViewController.swift */; };
+		8FDC46D124B7D77200A9DE5A /* StoreCouponViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDC46CF24B7D77200A9DE5A /* StoreCouponViewController.xib */; };
+		8FDC46D424B9BBBF00A9DE5A /* CouponDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC46D224B9BBBF00A9DE5A /* CouponDetailView.swift */; };
+		8FDC46D524B9BBBF00A9DE5A /* CouponDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDC46D324B9BBBF00A9DE5A /* CouponDetailView.xib */; };
 		8FE8811523C43675005180A3 /* BsckView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8811323C43675005180A3 /* BsckView2.swift */; };
 		8FE8811623C43675005180A3 /* BsckView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE8811423C43675005180A3 /* BsckView2.xib */; };
 		8FE8811923DFE1A9005180A3 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8811723DFE1A9005180A3 /* MenuTableViewCell.swift */; };
@@ -71,6 +75,10 @@
 		8FC6D59124A5786600C7E83A /* StoreCouponTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreCouponTableViewCell.xib; sourceTree = "<group>"; };
 		8FD03DB824A24BD400217B54 /* StoreMenuDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreMenuDetailsView.swift; sourceTree = "<group>"; };
 		8FD03DB924A24BD400217B54 /* StoreMenuDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreMenuDetailsView.xib; sourceTree = "<group>"; };
+		8FDC46CE24B7D77200A9DE5A /* StoreCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCouponViewController.swift; sourceTree = "<group>"; };
+		8FDC46CF24B7D77200A9DE5A /* StoreCouponViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreCouponViewController.xib; sourceTree = "<group>"; };
+		8FDC46D224B9BBBF00A9DE5A /* CouponDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponDetailView.swift; sourceTree = "<group>"; };
+		8FDC46D324B9BBBF00A9DE5A /* CouponDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CouponDetailView.xib; sourceTree = "<group>"; };
 		8FE8811323C43675005180A3 /* BsckView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BsckView2.swift; sourceTree = "<group>"; };
 		8FE8811423C43675005180A3 /* BsckView2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BsckView2.xib; sourceTree = "<group>"; };
 		8FE8811723DFE1A9005180A3 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -163,14 +171,18 @@
 				8FEEC3F3249088B100E8DA7D /* StoreMenuView.xib */,
 				8FEEC3F62490891000E8DA7D /* StoreMenuTableViewCell.swift */,
 				8FEEC3F72490891000E8DA7D /* StoreMenuTableViewCell.xib */,
-				8FC6D58C24A577E000C7E83A /* StoreCouponTableViewController.swift */,
-				8FC6D58D24A577E000C7E83A /* StoreCouponTableViewController.xib */,
-				8FC6D59024A5786500C7E83A /* StoreCouponTableViewCell.swift */,
-				8FC6D59124A5786600C7E83A /* StoreCouponTableViewCell.xib */,
 				8F9C7AFC24B2CF9800C27687 /* StoreMenuDateilViewController.swift */,
 				8F9C7AFD24B2CF9800C27687 /* StoreMenuDateilViewController.xib */,
 				8FD03DB824A24BD400217B54 /* StoreMenuDetailsView.swift */,
 				8FD03DB924A24BD400217B54 /* StoreMenuDetailsView.xib */,
+				8FC6D58C24A577E000C7E83A /* StoreCouponTableViewController.swift */,
+				8FC6D58D24A577E000C7E83A /* StoreCouponTableViewController.xib */,
+				8FC6D59024A5786500C7E83A /* StoreCouponTableViewCell.swift */,
+				8FC6D59124A5786600C7E83A /* StoreCouponTableViewCell.xib */,
+				8FDC46CE24B7D77200A9DE5A /* StoreCouponViewController.swift */,
+				8FDC46CF24B7D77200A9DE5A /* StoreCouponViewController.xib */,
+				8FDC46D224B9BBBF00A9DE5A /* CouponDetailView.swift */,
+				8FDC46D324B9BBBF00A9DE5A /* CouponDetailView.xib */,
 			);
 			path = Top3;
 			sourceTree = "<group>";
@@ -236,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FEEC3F92490891000E8DA7D /* StoreMenuTableViewCell.xib in Resources */,
+				8FDC46D524B9BBBF00A9DE5A /* CouponDetailView.xib in Resources */,
 				8F9C7AFF24B2CF9800C27687 /* StoreMenuDateilViewController.xib in Resources */,
 				8FC6D59324A5786600C7E83A /* StoreCouponTableViewCell.xib in Resources */,
 				8FE8811623C43675005180A3 /* BsckView2.xib in Resources */,
@@ -247,6 +260,7 @@
 				8F5B9C0D23A72E9600469377 /* TopMainViewController.xib in Resources */,
 				8F5B9C0023A72E3C00469377 /* Assets.xcassets in Resources */,
 				8F5B9C1D23A7312E00469377 /* MenuView.xib in Resources */,
+				8FDC46D124B7D77200A9DE5A /* StoreCouponViewController.xib in Resources */,
 				8FE8811A23DFE1A9005180A3 /* MenuTableViewCell.xib in Resources */,
 				8F5B9BFB23A72E3C00469377 /* Main.storyboard in Resources */,
 				8F5B9C1923A7302000469377 /* HeaderView.xib in Resources */,
@@ -307,11 +321,13 @@
 				8FE8811523C43675005180A3 /* BsckView2.swift in Sources */,
 				8F5B9BF423A72E3C00469377 /* AppDelegate.swift in Sources */,
 				8FEEC3F82490891000E8DA7D /* StoreMenuTableViewCell.swift in Sources */,
+				8FDC46D424B9BBBF00A9DE5A /* CouponDetailView.swift in Sources */,
 				8F5B9C1C23A7312E00469377 /* MenuView.swift in Sources */,
 				8FD03DBA24A24BD400217B54 /* StoreMenuDetailsView.swift in Sources */,
 				8FEEC3F4249088B100E8DA7D /* StoreMenuView.swift in Sources */,
 				8FC6D58E24A577E000C7E83A /* StoreCouponTableViewController.swift in Sources */,
 				8FFD18E723B06FA400450A86 /* BackView.swift in Sources */,
+				8FDC46D024B7D77200A9DE5A /* StoreCouponViewController.swift in Sources */,
 				8F5B9C0C23A72E9600469377 /* TopMainViewController.swift in Sources */,
 				8F5B9C1423A72F9C00469377 /* MaskView.swift in Sources */,
 				8F5B9BF623A72E3C00469377 /* SceneDelegate.swift in Sources */,
