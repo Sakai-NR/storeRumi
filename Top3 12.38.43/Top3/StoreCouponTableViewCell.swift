@@ -31,6 +31,7 @@ class StoreCouponTableViewCell: BaseTableViewCell {
 extension StoreCouponTableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
+        labelColler()
     }
 }
 
@@ -41,6 +42,13 @@ extension StoreCouponTableViewCell {
 
 // MARK: - method
 extension StoreCouponTableViewCell {
-    
+    func couponNameupdata(name:String){
+        couponNameLabel.text = name
+    }
+    func labelColler(){
+        couponStartLabel.textColor = .gray
+        couponEndLabel.textColor = .gray
+        couponDetailLabel.textColor = .red
+    }
 }
 

@@ -21,10 +21,10 @@ extension StoreCouponTableViewControllerDelegate {
 class StoreCouponTableViewController: BaseView {
     weak var delegate: StoreCouponTableViewControllerDelegate? = nil
     @IBOutlet weak var storeCouponTableView: UITableView!
-    var couponName :[String] = ["マッサージ","エステ","","","","",""]
-    var couponStart : [String] = ["","","",""]
-    var couponEnd : [String] = ["","","",""]
-    var couponDetail : [String] = ["","",""]
+    var couponName :[String] = ["クーポン１","クーポン２","クーポン３"]
+    var couponStart : [String] = ["開始：****年**月**日","開始：****年**月**日","開始：****年**月**日","",""]
+    var couponEnd : [String] = ["終了：****年**月**日","終了：****年**月**日","終了：****年**月**日",""]
+    var couponDetail : [String] = ["クーポンの詳細を表示>","クーポンの詳細を表示>","クーポンの詳細を表示>"]
     
 }
 
@@ -46,6 +46,10 @@ extension StoreCouponTableViewController:UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell: StoreCouponTableViewCell =  tableView.dequeueReusableCell(withIdentifier: "StoreCouponTableViewCell", for: indexPath)as? StoreCouponTableViewCell else{return UITableViewCell()}
+        cell.couponNameLabel.text = couponName[indexPath.row]
+        cell.couponStartLabel.text = couponStart[indexPath.row]
+        cell.couponEndLabel.text = couponEnd[indexPath.row]
+        cell.couponDetailLabel.text = couponDetail[indexPath.row]
         return cell
     }
 }
@@ -57,6 +61,8 @@ extension StoreCouponTableViewController:UITableViewDelegate{
 
 // MARK: - method
 extension StoreCouponTableViewController {
+    func labelcoller(){
+    }
     
 }
 

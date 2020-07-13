@@ -27,6 +27,7 @@ class TopMainViewController: BaseViewController {
     @IBOutlet weak var storeCouponView: StoreCouponTableViewController!
     @IBOutlet weak var storeCouponViewWidth: NSLayoutConstraint!
     
+   
     
 //    ０の数値設定。
     var zero : CGFloat = 0
@@ -64,17 +65,18 @@ extension TopMainViewController:HeaderViewDelegate{
         openMenu()
         updataView()
 //        openbackTopButton()
-        closeMemberButton()
+//        closeMemberButton()
 //        closeStoreMenu()
     }
     func memberButton(_ sender: UIButton) {
         closeStoreMenu()
     }
     func BackButton(_ sender: UIButton) {
-        closeStoreMenuDetails()
+//        closeStoreMenuDetails()
         openStoreMenu()
         closeBuckButton()
         openMenuButton()
+        
     }
 }
 extension TopMainViewController:MaskViewDelegate{
@@ -133,7 +135,9 @@ extension TopMainViewController:StoreMenuViewDelegate{
    }
 extension TopMainViewController:StoreCouponTableViewControllerDelegate{
     func selectedCoupon(indexpath: IndexPath) {
- 
+    let storeCouponViewController = StoreCouponViewController()
+        transitionViewController(from: self, to: storeCouponViewController)
+        animatorManager.navigationType = .slide_push
     }
 }
 

@@ -53,7 +53,6 @@ extension StoreMenuDetailsView {
     func detailViewUpdata(name:String){
         menuDatailName.text = name
     }
-//    
     
 }
 
