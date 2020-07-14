@@ -13,8 +13,9 @@ import PGFramework
 // MARK: - Property
 class StoreCouponViewController: BaseViewController {
     @IBOutlet weak var hederView: HeaderView!
-    @IBOutlet weak var coupnMainview: StoreCouponTableViewController!
+    @IBOutlet weak var couponDetailView: CouponDetailView!
     
+    var coupnNameLabel = ""
 }
 
 // MARK: - Life cycle
@@ -23,7 +24,8 @@ extension StoreCouponViewController {
         super.loadView()
         ButtonUpdata()
         setDelegate()
-        
+        couponNameSet()
+                
     }
     
     override func viewDidLoad() {
@@ -63,6 +65,9 @@ extension StoreCouponViewController {
     func ButtonUpdata(){
         hederView.menuButtonOutlet.isHidden = true
         hederView.backButtonOutlet.isHidden = false
+    }
+    func couponNameSet(){
+        couponDetailView.couponNameUpdata(name:coupnNameLabel)
     }
     
 }

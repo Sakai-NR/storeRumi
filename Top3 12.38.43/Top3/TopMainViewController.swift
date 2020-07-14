@@ -138,6 +138,8 @@ extension TopMainViewController:StoreCouponTableViewControllerDelegate{
     let storeCouponViewController = StoreCouponViewController()
         transitionViewController(from: self, to: storeCouponViewController)
         animatorManager.navigationType = .slide_push
+        storeCouponDetailUpdata(index:indexpath.row,vc:storeCouponViewController)
+        
     }
 }
 
@@ -331,6 +333,19 @@ extension TopMainViewController {
     func closeStoreCouponView(){
         UIView.animate(withDuration: animationTime) {
             self.closeStoreCouponWidth()
+        }
+    }
+//    StoreCouponDetail
+    func storeCouponDetailUpdata(index:Int,vc:StoreCouponViewController){
+        switch index {
+        case 0:
+            vc.coupnNameLabel = "クーポン１"
+        case 1:
+            vc.coupnNameLabel = "クーポン2"
+        case 2:
+            vc.coupnNameLabel = "クーポン3"
+        default:
+            vc.coupnNameLabel = "クーポン4"
         }
     }
     

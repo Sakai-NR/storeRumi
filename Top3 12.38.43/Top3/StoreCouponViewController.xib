@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoreCouponViewController" customModule="Top3" customModuleProvider="target">
             <connections>
-                <outlet property="coupnMainview" destination="l2v-ra-nkO" id="frL-1I-AvZ"/>
+                <outlet property="couponDetailView" destination="l2v-ra-nkO" id="5oP-ff-QTA"/>
                 <outlet property="hederView" destination="lCK-V2-7Ui" id="aW8-qG-sbn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
