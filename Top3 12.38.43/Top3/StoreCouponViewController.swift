@@ -14,7 +14,6 @@ import PGFramework
 class StoreCouponViewController: BaseViewController {
     @IBOutlet weak var hederView: HeaderView!
     @IBOutlet weak var couponDetailView: CouponDetailView!
-    
     var coupnNameLabel = ""
 }
 
@@ -53,6 +52,13 @@ extension StoreCouponViewController :HeaderViewDelegate{
         navigationController?.popViewController(animated: true)
         animatorManager.navigationType = .slide_pop
     }
+}
+extension StoreCouponViewController :CouponDetailViewDelegate{
+    func couponUseButton(_ sender: UIButton) {
+        let couponUsedViewController = CouponUsedViewController()
+        transitionViewController(from: self, to: couponUsedViewController)
+        animatorManager.navigationType = .none
+    }
     
     
 }
@@ -61,6 +67,7 @@ extension StoreCouponViewController :HeaderViewDelegate{
 extension StoreCouponViewController {
     func setDelegate(){
         hederView.delegate = self
+        couponDetailView.delegate = self
     }
     func ButtonUpdata(){
         hederView.menuButtonOutlet.isHidden = true
@@ -69,6 +76,5 @@ extension StoreCouponViewController {
     func couponNameSet(){
         couponDetailView.couponNameUpdata(name:coupnNameLabel)
     }
-    
 }
 
