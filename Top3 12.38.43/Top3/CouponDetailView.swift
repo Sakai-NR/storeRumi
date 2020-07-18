@@ -11,10 +11,11 @@ import PGFramework
 
 
 protocol CouponDetailViewDelegate: NSObjectProtocol{
-    
+        func couponUseButton(_ sender: UIButton)
 }
 
 extension CouponDetailViewDelegate {
+ 
     
 }
 // MARK: - Property
@@ -26,7 +27,9 @@ class CouponDetailView: BaseView {
     @IBOutlet weak var couponImage: UIImageView!
     @IBOutlet weak var couponButtonSetUp: UIButton!
     @IBAction func couponUseButton(_ sender: UIButton) {
+        delegate?.couponUseButton(sender)
     }
+    @IBOutlet weak var couponContentsImageVew: UIImageView!
     
 }
 
@@ -51,6 +54,7 @@ extension CouponDetailView {
         couponTitlelabel.clipsToBounds = true
         couponImage.layer.cornerRadius = 10
         couponButtonSetUp.layer.cornerRadius = 10
+        couponContentsImageVew.layer.cornerRadius = 10
     }
     func couponNameUpdata(name:String){
         couponNamelabel.text = name
