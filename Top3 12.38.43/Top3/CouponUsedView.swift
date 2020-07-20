@@ -50,11 +50,17 @@ extension CouponUsedView {
 // MARK: - method
 extension CouponUsedView {
    func confimationSetup(){
-    confimationView.layer.cornerRadius = 5
+    confimationView.layer.cornerRadius = 10
+//    useButton
     useButtonOutlet.layer.borderColor = UIColor.gray.cgColor
-    noUseButtonOutlet.layer.borderColor = UIColor.gray.cgColor
     useButtonOutlet.layer.borderWidth = 1
+    useButtonOutlet.layer.cornerRadius = 10
+    useButtonOutlet.layer.maskedCorners = [.layerMinXMaxYCorner]
+//    nouseButton
     noUseButtonOutlet.layer.borderWidth = 1
+     noUseButtonOutlet.layer.borderColor = UIColor.gray.cgColor
+    noUseButtonOutlet.layer.cornerRadius = 10
+    noUseButtonOutlet.layer.maskedCorners = [.layerMaxXMaxYCorner]
     }
 }
 
