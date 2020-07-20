@@ -173,16 +173,15 @@
 				8FFD18E623B06FA400450A86 /* BackView.xib */,
 				8FE8811323C43675005180A3 /* BsckView2.swift */,
 				8FE8811423C43675005180A3 /* BsckView2.xib */,
-				8FE8811723DFE1A9005180A3 /* MenuTableViewCell.swift */,
-				8FE8811823DFE1A9005180A3 /* MenuTableViewCell.xib */,
-				8FEEC3F2249088B100E8DA7D /* StoreMenuView.swift */,
-				8FEEC3F3249088B100E8DA7D /* StoreMenuView.xib */,
-				8FEEC3F62490891000E8DA7D /* StoreMenuTableViewCell.swift */,
-				8FEEC3F72490891000E8DA7D /* StoreMenuTableViewCell.xib */,
-				8F9C7AFC24B2CF9800C27687 /* StoreMenuDateilViewController.swift */,
-				8F9C7AFD24B2CF9800C27687 /* StoreMenuDateilViewController.xib */,
-				8FD03DB824A24BD400217B54 /* StoreMenuDetailsView.swift */,
-				8FD03DB924A24BD400217B54 /* StoreMenuDetailsView.xib */,
+				8FDC46DF24C547DC00A9DE5A /* StoreMenuView */,
+				8FDC46DE24C5475D00A9DE5A /* CouponView */,
+			);
+			path = Top3;
+			sourceTree = "<group>";
+		};
+		8FDC46DE24C5475D00A9DE5A /* CouponView */ = {
+			isa = PBXGroup;
+			children = (
 				8FC6D58C24A577E000C7E83A /* StoreCouponTableViewController.swift */,
 				8FC6D58D24A577E000C7E83A /* StoreCouponTableViewController.xib */,
 				8FC6D59024A5786500C7E83A /* StoreCouponTableViewCell.swift */,
@@ -196,7 +195,25 @@
 				8FDC46D624BEB07000A9DE5A /* CouponUsedView.swift */,
 				8FDC46D724BEB07000A9DE5A /* CouponUsedView.xib */,
 			);
-			path = Top3;
+			path = CouponView;
+			sourceTree = "<group>";
+		};
+		8FDC46DF24C547DC00A9DE5A /* StoreMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				8FE8811723DFE1A9005180A3 /* MenuTableViewCell.swift */,
+				8FE8811823DFE1A9005180A3 /* MenuTableViewCell.xib */,
+				8FEEC3F2249088B100E8DA7D /* StoreMenuView.swift */,
+				8FEEC3F3249088B100E8DA7D /* StoreMenuView.xib */,
+				8FEEC3F62490891000E8DA7D /* StoreMenuTableViewCell.swift */,
+				8FEEC3F72490891000E8DA7D /* StoreMenuTableViewCell.xib */,
+				8F9C7AFC24B2CF9800C27687 /* StoreMenuDateilViewController.swift */,
+				8F9C7AFD24B2CF9800C27687 /* StoreMenuDateilViewController.xib */,
+				8FD03DB824A24BD400217B54 /* StoreMenuDetailsView.swift */,
+				8FD03DB924A24BD400217B54 /* StoreMenuDetailsView.xib */,
+			);
+			name = StoreMenuView;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

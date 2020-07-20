@@ -56,9 +56,9 @@ extension CouponUsedView {
     useButtonOutlet.layer.borderWidth = 1
     useButtonOutlet.layer.cornerRadius = 10
     useButtonOutlet.layer.maskedCorners = [.layerMinXMaxYCorner]
-//    nouseButton
+//    noUseButton
     noUseButtonOutlet.layer.borderWidth = 1
-     noUseButtonOutlet.layer.borderColor = UIColor.gray.cgColor
+    noUseButtonOutlet.layer.borderColor = UIColor.gray.cgColor
     noUseButtonOutlet.layer.cornerRadius = 10
     noUseButtonOutlet.layer.maskedCorners = [.layerMaxXMaxYCorner]
     }
