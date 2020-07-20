@@ -17,6 +17,7 @@ class CouponUsedViewController: BaseViewController {
     @IBOutlet weak var maskView: MaskView!
     
     @IBOutlet weak var couponUsedView: CouponUsedView!
+    
 }
 
 // MARK: - Life cycle
