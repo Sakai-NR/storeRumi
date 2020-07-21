@@ -27,6 +27,7 @@ extension CouponUsedViewController {
         HeaderViewSetUp()
         couponUsedViewMusk()
         setdelegate()
+        couponUsedViewSet()
     }
     
     override func viewDidLoad() {
@@ -49,7 +50,6 @@ extension CouponUsedViewController:CouponUsedViewDelegate{
     }
 }
 
-
 extension CouponUsedViewController:HeaderViewDelegate {
     func menuButton(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
@@ -65,8 +65,6 @@ extension CouponUsedViewController:HeaderViewDelegate {
         navigationController?.popViewController(animated: true)
         animatorManager.navigationType = .none
     }
-    
-    
 }
 
 // MARK: - method
@@ -83,6 +81,8 @@ extension CouponUsedViewController {
     func couponUsedViewMusk(){
         maskView.alpha = 0.7
         }
-    
+    func couponUsedViewSet(){
+        couponUsedView.layer.cornerRadius = 10
+    }
 }
 

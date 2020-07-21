@@ -31,6 +31,7 @@ class CouponUsedView: BaseView {
     }
     @IBOutlet weak var useButtonOutlet: UIButton!
     @IBOutlet weak var noUseButtonOutlet: UIButton!
+    @IBOutlet var usedMainView: UIView!
     
 }
 
@@ -51,6 +52,8 @@ extension CouponUsedView {
 extension CouponUsedView {
    func confimationSetup(){
     confimationView.layer.cornerRadius = 10
+//    usedMainView
+    usedMainView.layer.cornerRadius = 10
 //    useButton
     useButtonOutlet.layer.borderColor = UIColor.gray.cgColor
     useButtonOutlet.layer.borderWidth = 1

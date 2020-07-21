@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CouponUsedViewController" customModule="Top3" customModuleProvider="target">
             <connections>
-                <outlet property="couponUsedView" destination="HTg-M5-Tdz" id="aJK-i6-M1q"/>
+                <outlet property="couponUsedView" destination="13K-q3-mx4" id="TY7-Je-lLc"/>
                 <outlet property="headerView" destination="fvz-Rk-sjO" id="xgh-BY-Rsh"/>
                 <outlet property="maskView" destination="F1M-b2-meC" id="ea8-TQ-qyQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -35,14 +35,20 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
-                <view contentMode="scaleToFill" id="HTg-M5-Tdz" customClass="CouponUsedView" customModule="Top3" customModuleProvider="target">
-                    <rect key="frame" x="42" y="308" width="329" height="200"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13K-q3-mx4" customClass="CouponUsedView" customModule="Top3" customModuleProvider="target">
+                    <rect key="frame" x="64" y="348" width="286" height="200"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <viewLayoutGuide key="safeArea" id="KdQ-u2-6Ed"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="13K-q3-mx4" secondAttribute="height" multiplier="10:7" id="BCQ-2w-I9z"/>
+                        <constraint firstAttribute="height" constant="200" id="gkc-CW-0W4"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="13K-q3-mx4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Izl-a6-Owj"/>
+                <constraint firstItem="13K-q3-mx4" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="rlQ-tn-gB4"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
         </view>
