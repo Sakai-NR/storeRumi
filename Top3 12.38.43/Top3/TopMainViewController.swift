@@ -93,6 +93,8 @@ extension TopMainViewController:MenuViewDelegate{
             openStoreMenu()
         case 2 :
             openStoreCouponView()
+//        case 3:
+            
         default:
             closeMenu()
         }

@@ -12,6 +12,7 @@
                 <outlet property="confimationView" destination="Zbh-te-wlc" id="LyC-3s-mDm"/>
                 <outlet property="noUseButtonOutlet" destination="nW4-yi-Agk" id="xPW-9y-5NY"/>
                 <outlet property="useButtonOutlet" destination="vqX-Ol-fUH" id="HX8-2w-Chf"/>
+                <outlet property="usedMainView" destination="i5M-Pr-FkT" id="fb2-rL-hcf"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
