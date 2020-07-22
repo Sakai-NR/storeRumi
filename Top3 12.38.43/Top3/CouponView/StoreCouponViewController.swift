@@ -59,8 +59,6 @@ extension StoreCouponViewController :CouponDetailViewDelegate{
         transitionViewController(from: self, to: couponUsedViewController)
         animatorManager.navigationType = .none
     }
-    
-    
 }
 
 // MARK: - method
