@@ -29,6 +29,8 @@
 		8FC6D58F24A577E000C7E83A /* StoreCouponTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FC6D58D24A577E000C7E83A /* StoreCouponTableViewController.xib */; };
 		8FC6D59224A5786600C7E83A /* StoreCouponTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC6D59024A5786500C7E83A /* StoreCouponTableViewCell.swift */; };
 		8FC6D59324A5786600C7E83A /* StoreCouponTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FC6D59124A5786600C7E83A /* StoreCouponTableViewCell.xib */; };
+		8FCA46A224C870270047ADD2 /* ShopingMainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA46A024C870270047ADD2 /* ShopingMainTableView.swift */; };
+		8FCA46A324C870270047ADD2 /* ShopingMainTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46A124C870270047ADD2 /* ShopingMainTableView.xib */; };
 		8FD03DBA24A24BD400217B54 /* StoreMenuDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD03DB824A24BD400217B54 /* StoreMenuDetailsView.swift */; };
 		8FD03DBB24A24BD400217B54 /* StoreMenuDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD03DB924A24BD400217B54 /* StoreMenuDetailsView.xib */; };
 		8FDC46D024B7D77200A9DE5A /* StoreCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC46CE24B7D77200A9DE5A /* StoreCouponViewController.swift */; };
@@ -39,6 +41,8 @@
 		8FDC46D924BEB07000A9DE5A /* CouponUsedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDC46D724BEB07000A9DE5A /* CouponUsedView.xib */; };
 		8FDC46DC24BEB42F00A9DE5A /* CouponUsedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC46DA24BEB42F00A9DE5A /* CouponUsedViewController.swift */; };
 		8FDC46DD24BEB42F00A9DE5A /* CouponUsedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDC46DB24BEB42F00A9DE5A /* CouponUsedViewController.xib */; };
+		8FDC46E324C71ECA00A9DE5A /* ShopingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC46E124C71ECA00A9DE5A /* ShopingViewController.swift */; };
+		8FDC46E424C71ECA00A9DE5A /* ShopingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FDC46E224C71ECA00A9DE5A /* ShopingViewController.xib */; };
 		8FE8811523C43675005180A3 /* BsckView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8811323C43675005180A3 /* BsckView2.swift */; };
 		8FE8811623C43675005180A3 /* BsckView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE8811423C43675005180A3 /* BsckView2.xib */; };
 		8FE8811923DFE1A9005180A3 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8811723DFE1A9005180A3 /* MenuTableViewCell.swift */; };
@@ -77,6 +81,8 @@
 		8FC6D58D24A577E000C7E83A /* StoreCouponTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreCouponTableViewController.xib; sourceTree = "<group>"; };
 		8FC6D59024A5786500C7E83A /* StoreCouponTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCouponTableViewCell.swift; sourceTree = "<group>"; };
 		8FC6D59124A5786600C7E83A /* StoreCouponTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreCouponTableViewCell.xib; sourceTree = "<group>"; };
+		8FCA46A024C870270047ADD2 /* ShopingMainTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopingMainTableView.swift; sourceTree = "<group>"; };
+		8FCA46A124C870270047ADD2 /* ShopingMainTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopingMainTableView.xib; sourceTree = "<group>"; };
 		8FD03DB824A24BD400217B54 /* StoreMenuDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreMenuDetailsView.swift; sourceTree = "<group>"; };
 		8FD03DB924A24BD400217B54 /* StoreMenuDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreMenuDetailsView.xib; sourceTree = "<group>"; };
 		8FDC46CE24B7D77200A9DE5A /* StoreCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCouponViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +93,8 @@
 		8FDC46D724BEB07000A9DE5A /* CouponUsedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CouponUsedView.xib; sourceTree = "<group>"; };
 		8FDC46DA24BEB42F00A9DE5A /* CouponUsedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouponUsedViewController.swift; sourceTree = "<group>"; };
 		8FDC46DB24BEB42F00A9DE5A /* CouponUsedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CouponUsedViewController.xib; sourceTree = "<group>"; };
+		8FDC46E124C71ECA00A9DE5A /* ShopingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopingViewController.swift; sourceTree = "<group>"; };
+		8FDC46E224C71ECA00A9DE5A /* ShopingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopingViewController.xib; sourceTree = "<group>"; };
 		8FE8811323C43675005180A3 /* BsckView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BsckView2.swift; sourceTree = "<group>"; };
 		8FE8811423C43675005180A3 /* BsckView2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BsckView2.xib; sourceTree = "<group>"; };
 		8FE8811723DFE1A9005180A3 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -175,6 +183,7 @@
 				8FE8811423C43675005180A3 /* BsckView2.xib */,
 				8FDC46DF24C547DC00A9DE5A /* StoreMenuView */,
 				8FDC46DE24C5475D00A9DE5A /* CouponView */,
+				8FDC46E024C71E4200A9DE5A /* ShopView */,
 			);
 			path = Top3;
 			sourceTree = "<group>";
@@ -214,6 +223,17 @@
 			);
 			name = StoreMenuView;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		8FDC46E024C71E4200A9DE5A /* ShopView */ = {
+			isa = PBXGroup;
+			children = (
+				8FDC46E124C71ECA00A9DE5A /* ShopingViewController.swift */,
+				8FDC46E224C71ECA00A9DE5A /* ShopingViewController.xib */,
+				8FCA46A024C870270047ADD2 /* ShopingMainTableView.swift */,
+				8FCA46A124C870270047ADD2 /* ShopingMainTableView.xib */,
+			);
+			path = ShopView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,9 +299,11 @@
 				8FEEC3F92490891000E8DA7D /* StoreMenuTableViewCell.xib in Resources */,
 				8FDC46D524B9BBBF00A9DE5A /* CouponDetailView.xib in Resources */,
 				8F9C7AFF24B2CF9800C27687 /* StoreMenuDateilViewController.xib in Resources */,
+				8FDC46E424C71ECA00A9DE5A /* ShopingViewController.xib in Resources */,
 				8FC6D59324A5786600C7E83A /* StoreCouponTableViewCell.xib in Resources */,
 				8FE8811623C43675005180A3 /* BsckView2.xib in Resources */,
 				8F5B9C1523A72F9C00469377 /* MaskView.xib in Resources */,
+				8FCA46A324C870270047ADD2 /* ShopingMainTableView.xib in Resources */,
 				8F5B9C1123A72EC500469377 /* TopMainView.xib in Resources */,
 				8FFD18E823B06FA400450A86 /* BackView.xib in Resources */,
 				8F5B9C0323A72E3C00469377 /* LaunchScreen.storyboard in Resources */,
@@ -350,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE8811523C43675005180A3 /* BsckView2.swift in Sources */,
+				8FCA46A224C870270047ADD2 /* ShopingMainTableView.swift in Sources */,
 				8FDC46DC24BEB42F00A9DE5A /* CouponUsedViewController.swift in Sources */,
 				8F5B9BF423A72E3C00469377 /* AppDelegate.swift in Sources */,
 				8FEEC3F82490891000E8DA7D /* StoreMenuTableViewCell.swift in Sources */,
@@ -358,6 +381,7 @@
 				8FD03DBA24A24BD400217B54 /* StoreMenuDetailsView.swift in Sources */,
 				8FEEC3F4249088B100E8DA7D /* StoreMenuView.swift in Sources */,
 				8FC6D58E24A577E000C7E83A /* StoreCouponTableViewController.swift in Sources */,
+				8FDC46E324C71ECA00A9DE5A /* ShopingViewController.swift in Sources */,
 				8FFD18E723B06FA400450A86 /* BackView.swift in Sources */,
 				8FDC46D024B7D77200A9DE5A /* StoreCouponViewController.swift in Sources */,
 				8F5B9C0C23A72E9600469377 /* TopMainViewController.swift in Sources */,

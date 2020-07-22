@@ -93,8 +93,10 @@ extension TopMainViewController:MenuViewDelegate{
             openStoreMenu()
         case 2 :
             openStoreCouponView()
-//        case 3:
-            
+        case 4:
+            let shopingViewController = ShopingViewController()
+            transitionViewController(from: self, to: shopingViewController)
+            animatorManager.navigationType = .slide_push
         default:
             closeMenu()
         }
