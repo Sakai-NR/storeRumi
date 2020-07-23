@@ -30,6 +30,9 @@
                                 <constraint firstAttribute="width" secondItem="Cba-au-bth" secondAttribute="height" multiplier="1:1" id="nRV-32-Eh2"/>
                             </constraints>
                             <state key="normal" title="クーポン"/>
+                            <connections>
+                                <action selector="couponButton:" destination="-1" eventType="touchUpInside" id="ux7-ox-sRV"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pow-Rb-qRI">
                             <rect key="frame" x="132" y="0.0" width="118" height="118.5"/>
@@ -38,6 +41,9 @@
                                 <constraint firstAttribute="width" secondItem="pow-Rb-qRI" secondAttribute="height" multiplier="1:1" id="tah-6h-1Sj"/>
                             </constraints>
                             <state key="normal" title="スタンプ"/>
+                            <connections>
+                                <action selector="stampButton:" destination="-1" eventType="touchUpInside" id="7FA-7U-cM7"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vR-Uo-xbX">
                             <rect key="frame" x="263.5" y="0.0" width="118.5" height="118.5"/>
@@ -46,6 +52,9 @@
                                 <constraint firstAttribute="width" secondItem="8vR-Uo-xbX" secondAttribute="height" multiplier="1:1" id="Api-uV-109"/>
                             </constraints>
                             <state key="normal" title="スキンアイテム"/>
+                            <connections>
+                                <action selector="shoppingButton:" destination="-1" eventType="touchUpInside" id="7St-2K-lcq"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -74,6 +83,9 @@
                                 <constraint firstAttribute="width" secondItem="Ogb-nm-Yyq" secondAttribute="height" multiplier="1:1" id="B0h-AG-ZdB"/>
                             </constraints>
                             <state key="normal" title="メニュー"/>
+                            <connections>
+                                <action selector="storeMenuButton:" destination="-1" eventType="touchUpInside" id="ahB-QD-geb"/>
+                            </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLX-Mf-ot5">
                             <rect key="frame" x="198.5" y="0.0" width="183.5" height="183.5"/>
@@ -82,6 +94,9 @@
                                 <constraint firstAttribute="width" secondItem="fLX-Mf-ot5" secondAttribute="height" multiplier="1:1" id="YHL-AU-Gqy"/>
                             </constraints>
                             <state key="normal" title="予約"/>
+                            <connections>
+                                <action selector="reservationButton:" destination="-1" eventType="touchUpInside" id="C6G-IT-ReH"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>

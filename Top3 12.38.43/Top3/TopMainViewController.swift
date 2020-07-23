@@ -12,6 +12,7 @@ import PGFramework
 
 // MARK: - Property
 class TopMainViewController: BaseViewController {
+    @IBOutlet weak var topMainView: TopMainView!
     @IBOutlet weak var headerView: HeaderView!
     @IBOutlet weak var maskView: MaskView!
     @IBOutlet weak var menuView: MenuView!
@@ -79,6 +80,31 @@ extension TopMainViewController:HeaderViewDelegate{
         
     }
 }
+extension TopMainViewController:TopMainViewDelegate{
+    func storeMenuButton(_ sender: UIButton) {
+        
+    }
+    
+    func reservationButton(_ sender: UIButton) {
+        
+    }
+    
+    func couponButton(_ sender: UIButton) {
+        
+    }
+    
+    func stampButton(_ sender: UIButton) {
+        
+    }
+    
+    func shoppingButton(_ sender: UIButton) {
+        let shopingViewController = ShopingViewController()
+        transitionViewController(from: self, to: shopingViewController)
+        animatorManager.navigationType = .slide_push
+    }
+}
+
+
 extension TopMainViewController:MaskViewDelegate{
     
 }
@@ -158,6 +184,7 @@ extension TopMainViewController:BsckView2Delegate{
 extension TopMainViewController {
     
     func setDelegate(){
+        topMainView.delegate = self
         headerView.delegate = self
         maskView.delegate = self
         menuView.delegate = self

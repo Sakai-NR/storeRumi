@@ -21,8 +21,8 @@ class ShopingViewController: BaseViewController {
 extension ShopingViewController {
     override func loadView() {
         super.loadView()
-        headerView.backButtonOutlet.isHidden = false
-        headerView.menuButtonOutlet.isHidden = true
+        setDelegate()
+        setButton()
     }
     
     override func viewDidLoad() {
@@ -47,9 +47,11 @@ extension ShopingViewController:HeaderViewDelegate {
     }
     
     func BackButton(_ sender: UIButton) {
-       let topMainViewController = TopMainViewController()
-        transitionViewController(from: self, to: topMainViewController)
-        animatorManager.navigationType = .slide_pop
+       navigationController?.popViewController(animated: true)
+       animatorManager.navigationType = .slide_push
+//     let topMainViewController = TopMainViewController()
+//        topMainViewController.openMenu()
+        
     }
     
 }
@@ -58,6 +60,10 @@ extension ShopingViewController:HeaderViewDelegate {
 extension ShopingViewController {
     func setDelegate(){
         headerView.delegate = self
+    }
+    func setButton(){
+        headerView.backButtonOutlet.isHidden = false
+        headerView.menuButtonOutlet.isHidden = true
     }
     
 }
