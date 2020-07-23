@@ -23,6 +23,7 @@
                 <outlet property="storeMenuDatailsWidth" destination="1vY-G8-4Zm" id="yOg-6f-j6h"/>
                 <outlet property="storeMenuView" destination="OTQ-Bf-yPy" id="vEl-tr-unc"/>
                 <outlet property="storeMenuViewWidth" destination="b2M-ql-Gyr" id="chQ-XG-QMs"/>
+                <outlet property="topMainView" destination="jWJ-KU-L4B" id="FVd-CC-yZt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
