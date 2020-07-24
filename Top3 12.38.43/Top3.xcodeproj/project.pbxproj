@@ -35,6 +35,8 @@
 		8FCA46A724CA8A540047ADD2 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46A524CA8A540047ADD2 /* SearchTableViewCell.xib */; };
 		8FCA46AA24CA8F470047ADD2 /* BigImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA46A824CA8F470047ADD2 /* BigImageTableViewCell.swift */; };
 		8FCA46AB24CA8F470047ADD2 /* BigImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46A924CA8F470047ADD2 /* BigImageTableViewCell.xib */; };
+		8FCA46AE24CB1CAC0047ADD2 /* ContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA46AC24CB1CAC0047ADD2 /* ContentsTableViewCell.swift */; };
+		8FCA46AF24CB1CAC0047ADD2 /* ContentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46AD24CB1CAC0047ADD2 /* ContentsTableViewCell.xib */; };
 		8FD03DBA24A24BD400217B54 /* StoreMenuDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD03DB824A24BD400217B54 /* StoreMenuDetailsView.swift */; };
 		8FD03DBB24A24BD400217B54 /* StoreMenuDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD03DB924A24BD400217B54 /* StoreMenuDetailsView.xib */; };
 		8FDC46D024B7D77200A9DE5A /* StoreCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC46CE24B7D77200A9DE5A /* StoreCouponViewController.swift */; };
@@ -91,6 +93,8 @@
 		8FCA46A524CA8A540047ADD2 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 		8FCA46A824CA8F470047ADD2 /* BigImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigImageTableViewCell.swift; sourceTree = "<group>"; };
 		8FCA46A924CA8F470047ADD2 /* BigImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigImageTableViewCell.xib; sourceTree = "<group>"; };
+		8FCA46AC24CB1CAC0047ADD2 /* ContentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsTableViewCell.swift; sourceTree = "<group>"; };
+		8FCA46AD24CB1CAC0047ADD2 /* ContentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentsTableViewCell.xib; sourceTree = "<group>"; };
 		8FD03DB824A24BD400217B54 /* StoreMenuDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreMenuDetailsView.swift; sourceTree = "<group>"; };
 		8FD03DB924A24BD400217B54 /* StoreMenuDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreMenuDetailsView.xib; sourceTree = "<group>"; };
 		8FDC46CE24B7D77200A9DE5A /* StoreCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCouponViewController.swift; sourceTree = "<group>"; };
@@ -244,6 +248,8 @@
 				8FCA46A524CA8A540047ADD2 /* SearchTableViewCell.xib */,
 				8FCA46A824CA8F470047ADD2 /* BigImageTableViewCell.swift */,
 				8FCA46A924CA8F470047ADD2 /* BigImageTableViewCell.xib */,
+				8FCA46AC24CB1CAC0047ADD2 /* ContentsTableViewCell.swift */,
+				8FCA46AD24CB1CAC0047ADD2 /* ContentsTableViewCell.xib */,
 			);
 			path = ShopView;
 			sourceTree = "<group>";
@@ -329,6 +335,7 @@
 				8FCA46A724CA8A540047ADD2 /* SearchTableViewCell.xib in Resources */,
 				8FDC46DD24BEB42F00A9DE5A /* CouponUsedViewController.xib in Resources */,
 				8F5B9BFB23A72E3C00469377 /* Main.storyboard in Resources */,
+				8FCA46AF24CB1CAC0047ADD2 /* ContentsTableViewCell.xib in Resources */,
 				8F5B9C1923A7302000469377 /* HeaderView.xib in Resources */,
 				8FEEC3F5249088B100E8DA7D /* StoreMenuView.xib in Resources */,
 				8FC6D58F24A577E000C7E83A /* StoreCouponTableViewController.xib in Resources */,
@@ -400,6 +407,7 @@
 				8FDC46D024B7D77200A9DE5A /* StoreCouponViewController.swift in Sources */,
 				8F5B9C0C23A72E9600469377 /* TopMainViewController.swift in Sources */,
 				8FDC46D824BEB07000A9DE5A /* CouponUsedView.swift in Sources */,
+				8FCA46AE24CB1CAC0047ADD2 /* ContentsTableViewCell.swift in Sources */,
 				8F5B9C1423A72F9C00469377 /* MaskView.swift in Sources */,
 				8F5B9BF623A72E3C00469377 /* SceneDelegate.swift in Sources */,
 				8F5B9BFE23A72E3C00469377 /* Top3.xcdatamodeld in Sources */,
