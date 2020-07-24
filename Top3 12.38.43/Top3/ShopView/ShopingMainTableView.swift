@@ -20,22 +20,46 @@ extension ShopingMainTableViewDelegate {
 // MARK: - Property
 class ShopingMainTableView: BaseView {
     weak var delegate: ShopingMainTableViewDelegate? = nil
+    @IBOutlet weak var shopingTableView: UITableView!
 }
 
 // MARK: - Life cycle
 extension ShopingMainTableView {
     override func awakeFromNib() {
         super.awakeFromNib()
+        tableViewSet()
+        shopingTableView.dataSource = self
     }
 }
 
 // MARK: - Protocol
-extension ShopingMainTableView {
+extension ShopingMainTableView: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch indexPath.row {
+        case 0:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "SearchTableViewCell", for: indexPath)as? SearchTableViewCell else{return UITableViewCell()}
+            return cell
+        case 1:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "BigImageTableViewCell", for: indexPath)as? BigImageTableViewCell else {return UITableViewCell()}
+            return cell
+        default:
+            return UITableViewCell()
+        }
+    }
+    
     
 }
 
 // MARK: - method
 extension ShopingMainTableView {
+    func tableViewSet(){
+        loadTableViewCellFromXib(tableView: shopingTableView, cellName: "SearchTableViewCell")
+        loadTableViewCellFromXib(tableView: shopingTableView, cellName: "BigImageTableViewCell")
+    }
     
 }
 

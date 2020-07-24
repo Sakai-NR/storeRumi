@@ -82,7 +82,7 @@ extension TopMainViewController:HeaderViewDelegate{
 }
 extension TopMainViewController:TopMainViewDelegate{
     func storeMenuButton(_ sender: UIButton) {
-        
+        openStoreMenu()
     }
     
     func reservationButton(_ sender: UIButton) {
@@ -90,7 +90,7 @@ extension TopMainViewController:TopMainViewDelegate{
     }
     
     func couponButton(_ sender: UIButton) {
-        
+        openStoreCouponView()
     }
     
     func stampButton(_ sender: UIButton) {
