@@ -20,12 +20,14 @@ extension BigImageTableViewCellDelegate {
 // MARK: - Property
 class BigImageTableViewCell: BaseTableViewCell {
     weak var delegate: BigImageTableViewCellDelegate? = nil
+    @IBOutlet weak var shoppingImageView: UIImageView!
 }
 
 // MARK: - Life cycle
 extension BigImageTableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
+        setImage()
     }
 }
 
@@ -36,6 +38,9 @@ extension BigImageTableViewCell {
 
 // MARK: - method
 extension BigImageTableViewCell {
+    func setImage(){
+        shoppingImageView.layer.cornerRadius = 30
+    }
     
 }
 
