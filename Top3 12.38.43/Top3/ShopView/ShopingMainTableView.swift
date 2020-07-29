@@ -49,6 +49,10 @@ extension ShopingMainTableView: UITableViewDataSource{
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ContentsTableViewCell", for: indexPath)as? ContentsTableViewCell else{return UITableViewCell()}
             return cell
+        case 3:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ContenrtsTableCollectionViewCell", for: indexPath)as? ContenrtsTableCollectionViewCell else {return UITableViewCell()}
+            return cell
+            
         default:
             return UITableViewCell()
         }
@@ -63,6 +67,7 @@ extension ShopingMainTableView {
         loadTableViewCellFromXib(tableView: shopingTableView, cellName: "SearchTableViewCell")
         loadTableViewCellFromXib(tableView: shopingTableView, cellName: "BigImageTableViewCell")
         loadTableViewCellFromXib(tableView: shopingTableView, cellName: "ContentsTableViewCell")
+        loadTableViewCellFromXib(tableView: shopingTableView, cellName: "ContenrtsTableCollectionViewCell")
     }
 }
 

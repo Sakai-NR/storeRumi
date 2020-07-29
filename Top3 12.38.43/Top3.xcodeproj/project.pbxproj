@@ -37,6 +37,10 @@
 		8FCA46AB24CA8F470047ADD2 /* BigImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46A924CA8F470047ADD2 /* BigImageTableViewCell.xib */; };
 		8FCA46AE24CB1CAC0047ADD2 /* ContentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA46AC24CB1CAC0047ADD2 /* ContentsTableViewCell.swift */; };
 		8FCA46AF24CB1CAC0047ADD2 /* ContentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46AD24CB1CAC0047ADD2 /* ContentsTableViewCell.xib */; };
+		8FCA46B224CFD0580047ADD2 /* ContenrtsTableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA46B024CFD0580047ADD2 /* ContenrtsTableCollectionViewCell.swift */; };
+		8FCA46B324CFD0580047ADD2 /* ContenrtsTableCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46B124CFD0580047ADD2 /* ContenrtsTableCollectionViewCell.xib */; };
+		8FCA46B624CFD63F0047ADD2 /* ContentsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA46B424CFD63F0047ADD2 /* ContentsCollectionViewCell.swift */; };
+		8FCA46B724CFD63F0047ADD2 /* ContentsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46B524CFD63F0047ADD2 /* ContentsCollectionViewCell.xib */; };
 		8FD03DBA24A24BD400217B54 /* StoreMenuDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD03DB824A24BD400217B54 /* StoreMenuDetailsView.swift */; };
 		8FD03DBB24A24BD400217B54 /* StoreMenuDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD03DB924A24BD400217B54 /* StoreMenuDetailsView.xib */; };
 		8FDC46D024B7D77200A9DE5A /* StoreCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC46CE24B7D77200A9DE5A /* StoreCouponViewController.swift */; };
@@ -95,6 +99,10 @@
 		8FCA46A924CA8F470047ADD2 /* BigImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BigImageTableViewCell.xib; sourceTree = "<group>"; };
 		8FCA46AC24CB1CAC0047ADD2 /* ContentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsTableViewCell.swift; sourceTree = "<group>"; };
 		8FCA46AD24CB1CAC0047ADD2 /* ContentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentsTableViewCell.xib; sourceTree = "<group>"; };
+		8FCA46B024CFD0580047ADD2 /* ContenrtsTableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContenrtsTableCollectionViewCell.swift; sourceTree = "<group>"; };
+		8FCA46B124CFD0580047ADD2 /* ContenrtsTableCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContenrtsTableCollectionViewCell.xib; sourceTree = "<group>"; };
+		8FCA46B424CFD63F0047ADD2 /* ContentsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentsCollectionViewCell.swift; sourceTree = "<group>"; };
+		8FCA46B524CFD63F0047ADD2 /* ContentsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentsCollectionViewCell.xib; sourceTree = "<group>"; };
 		8FD03DB824A24BD400217B54 /* StoreMenuDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreMenuDetailsView.swift; sourceTree = "<group>"; };
 		8FD03DB924A24BD400217B54 /* StoreMenuDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreMenuDetailsView.xib; sourceTree = "<group>"; };
 		8FDC46CE24B7D77200A9DE5A /* StoreCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCouponViewController.swift; sourceTree = "<group>"; };
@@ -250,6 +258,10 @@
 				8FCA46A924CA8F470047ADD2 /* BigImageTableViewCell.xib */,
 				8FCA46AC24CB1CAC0047ADD2 /* ContentsTableViewCell.swift */,
 				8FCA46AD24CB1CAC0047ADD2 /* ContentsTableViewCell.xib */,
+				8FCA46B024CFD0580047ADD2 /* ContenrtsTableCollectionViewCell.swift */,
+				8FCA46B124CFD0580047ADD2 /* ContenrtsTableCollectionViewCell.xib */,
+				8FCA46B424CFD63F0047ADD2 /* ContentsCollectionViewCell.swift */,
+				8FCA46B524CFD63F0047ADD2 /* ContentsCollectionViewCell.xib */,
 			);
 			path = ShopView;
 			sourceTree = "<group>";
@@ -314,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FCA46B324CFD0580047ADD2 /* ContenrtsTableCollectionViewCell.xib in Resources */,
 				8FEEC3F92490891000E8DA7D /* StoreMenuTableViewCell.xib in Resources */,
 				8FDC46D524B9BBBF00A9DE5A /* CouponDetailView.xib in Resources */,
 				8FCA46AB24CA8F470047ADD2 /* BigImageTableViewCell.xib in Resources */,
@@ -321,6 +334,7 @@
 				8FDC46E424C71ECA00A9DE5A /* ShopingViewController.xib in Resources */,
 				8FC6D59324A5786600C7E83A /* StoreCouponTableViewCell.xib in Resources */,
 				8FE8811623C43675005180A3 /* BsckView2.xib in Resources */,
+				8FCA46B724CFD63F0047ADD2 /* ContentsCollectionViewCell.xib in Resources */,
 				8F5B9C1523A72F9C00469377 /* MaskView.xib in Resources */,
 				8FCA46A324C870270047ADD2 /* ShopingMainTableView.xib in Resources */,
 				8F5B9C1123A72EC500469377 /* TopMainView.xib in Resources */,
@@ -395,6 +409,7 @@
 				8FE8811523C43675005180A3 /* BsckView2.swift in Sources */,
 				8FCA46A224C870270047ADD2 /* ShopingMainTableView.swift in Sources */,
 				8FDC46DC24BEB42F00A9DE5A /* CouponUsedViewController.swift in Sources */,
+				8FCA46B224CFD0580047ADD2 /* ContenrtsTableCollectionViewCell.swift in Sources */,
 				8F5B9BF423A72E3C00469377 /* AppDelegate.swift in Sources */,
 				8FEEC3F82490891000E8DA7D /* StoreMenuTableViewCell.swift in Sources */,
 				8FDC46D424B9BBBF00A9DE5A /* CouponDetailView.swift in Sources */,
@@ -415,6 +430,7 @@
 				8FC6D59224A5786600C7E83A /* StoreCouponTableViewCell.swift in Sources */,
 				8FCA46AA24CA8F470047ADD2 /* BigImageTableViewCell.swift in Sources */,
 				8F9C7AFE24B2CF9800C27687 /* StoreMenuDateilViewController.swift in Sources */,
+				8FCA46B624CFD63F0047ADD2 /* ContentsCollectionViewCell.swift in Sources */,
 				8FCA46A624CA8A540047ADD2 /* SearchTableViewCell.swift in Sources */,
 				8F5B9C1823A7302000469377 /* HeaderView.swift in Sources */,
 				8FE8811923DFE1A9005180A3 /* MenuTableViewCell.swift in Sources */,

@@ -39,7 +39,7 @@ extension ContentsTableViewCell {
 // MARK: - method
 extension ContentsTableViewCell {
     func cellUpdata(){
-       contentsLabel.text = "おすすめの商品"
+       contentsLabel.text = "おすすめの商品!!"
     }
 }
 
