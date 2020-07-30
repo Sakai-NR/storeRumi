@@ -8,16 +8,19 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="329" id="X5t-d6-Ns3" customClass="ContenrtsTableCollectionViewCell" customModule="Top3" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="306" height="329"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="482" id="X5t-d6-Ns3" customClass="ContenrtsTableCollectionViewCell" customModule="Top3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="482"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X5t-d6-Ns3" id="9aO-GI-rgi">
-                <rect key="frame" x="0.0" y="0.0" width="306" height="329"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X5t-d6-Ns3" id="9aO-GI-rgi">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="482"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="QWB-vs-S0F">
-                        <rect key="frame" x="8" y="16" width="290" height="297"/>
+                        <rect key="frame" x="8" y="16" width="367" height="440"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="440" id="ghk-64-sC2"/>
+                        </constraints>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LRX-pQ-Xrg">
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -37,7 +40,7 @@
                 <outlet property="contensCollectionVewFlowLayout" destination="LRX-pQ-Xrg" id="Mmn-RI-o33"/>
                 <outlet property="contentsCollectionView" destination="QWB-vs-S0F" id="6jt-Ft-S2T"/>
             </connections>
-            <point key="canvasLocation" x="-53.623188405797109" y="120.20089285714285"/>
+            <point key="canvasLocation" x="2.1739130434782612" y="171.42857142857142"/>
         </tableViewCell>
     </objects>
 </document>

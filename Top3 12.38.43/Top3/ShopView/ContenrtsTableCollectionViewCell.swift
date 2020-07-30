@@ -33,7 +33,10 @@ extension ContenrtsTableCollectionViewCell {
         contentsCollectionView.dataSource = self
         loadCollectionViewCellFromXib(collectionView: contentsCollectionView, cellName: "ContentsCollectionViewCell")
     }
-    
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        contensCollectionVewFlowLayout.estimatedItemSize = CGSize(width: contentsCollectionView.contentSize.width ,height: 10)
+    }
 }
 
 // MARK: - Protocol
@@ -46,8 +49,6 @@ extension ContenrtsTableCollectionViewCell :UICollectionViewDataSource{
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentsCollectionViewCell", for: indexPath)as? ContentsCollectionViewCell else {return UICollectionViewCell()}
         return cell
     }
-    
-    
 }
 
 // MARK: - method
