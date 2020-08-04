@@ -11,15 +11,16 @@
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="482" id="X5t-d6-Ns3" customClass="ContenrtsTableCollectionViewCell" customModule="Top3" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="383" height="482"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X5t-d6-Ns3" id="9aO-GI-rgi">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X5t-d6-Ns3" id="9aO-GI-rgi">
                 <rect key="frame" x="0.0" y="0.0" width="383" height="482"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="QWB-vs-S0F">
-                        <rect key="frame" x="8" y="16" width="367" height="440"/>
+                        <rect key="frame" x="16" y="16" width="351" height="450"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="440" id="ghk-64-sC2"/>
+                            <constraint firstAttribute="height" constant="450" id="doX-hC-7rg"/>
+                            <constraint firstAttribute="width" constant="351" id="fE6-q9-RkX"/>
                         </constraints>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LRX-pQ-Xrg">
                             <size key="itemSize" width="50" height="50"/>
@@ -30,10 +31,10 @@
                     </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="QWB-vs-S0F" firstAttribute="leading" secondItem="9aO-GI-rgi" secondAttribute="leading" constant="8" id="BGL-m1-8s3"/>
+                    <constraint firstItem="QWB-vs-S0F" firstAttribute="leading" secondItem="9aO-GI-rgi" secondAttribute="leading" constant="16" id="BGL-m1-8s3"/>
                     <constraint firstAttribute="bottom" secondItem="QWB-vs-S0F" secondAttribute="bottom" constant="16" id="DTa-ct-v4W"/>
                     <constraint firstItem="QWB-vs-S0F" firstAttribute="top" secondItem="9aO-GI-rgi" secondAttribute="top" constant="16" id="fcI-2n-jjl"/>
-                    <constraint firstAttribute="trailing" secondItem="QWB-vs-S0F" secondAttribute="trailing" constant="8" id="reU-Ln-Vvq"/>
+                    <constraint firstAttribute="trailing" secondItem="QWB-vs-S0F" secondAttribute="trailing" constant="16" id="reU-Ln-Vvq"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
