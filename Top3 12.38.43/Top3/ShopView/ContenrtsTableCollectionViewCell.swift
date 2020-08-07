@@ -35,8 +35,7 @@ extension ContenrtsTableCollectionViewCell {
     }
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-//        contensCollectionVewFlowLayout.estimatedItemSize = CGSize(width: contentsCollectionView.contentSize.width ,height: 10)
-        contensCollectionVewFlowLayout.itemSize = CGSize(width: contentView.frame.width/2, height: contentView.frame.height/2)
+        contensCollectionVewFlowLayout.itemSize = CGSize(width: contentsCollectionView.frame.width/2.2, height: contentsCollectionView.frame.height)
     }
     
 }
