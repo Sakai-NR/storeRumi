@@ -37,7 +37,7 @@ class TopMainViewController: BaseViewController {
 //    表示する幅の設定。
     var openWidth : CGFloat  = 0.7
     var maskAlpha : CGFloat  = 0.6
-    var funllWidth : CGFloat = 1.0
+    var fullWidth : CGFloat = 1.0
 }
 // MARK: - Life cycle
 extension TopMainViewController {
@@ -261,7 +261,7 @@ extension TopMainViewController {
         updataView()
     }
     func openbackView2Width(){
-        self.backView2Width.constant = WIDTH * funllWidth
+        self.backView2Width.constant = WIDTH * fullWidth
         updataView()
         self.backView2.alpha = maskAlpha
     }
@@ -273,7 +273,7 @@ extension TopMainViewController {
 //storeMenu
 //    openStoreMenu
     func openStoreMenuWidth(){
-        self.storeMenuViewWidth.constant = WIDTH * funllWidth
+        self.storeMenuViewWidth.constant = WIDTH * fullWidth
         updataView()
     }
 //    closeStoreMenu
@@ -296,7 +296,7 @@ extension TopMainViewController {
 //StoreMenuDetails
 //    openStoreMenuDetails
     func openStoreMenuDatailsWidth(){
-        self.storeMenuDatailsWidth.constant = WIDTH * funllWidth
+        self.storeMenuDatailsWidth.constant = WIDTH * fullWidth
         updataView()
     }
     func closeStoreMenuDatailsWidth(){
@@ -347,7 +347,7 @@ extension TopMainViewController {
 //    StoreMenu
 //    OpenStoreCoupon
     func openStoreCouponWidth(){
-        self.storeCouponViewWidth.constant = WIDTH * funllWidth
+        self.storeCouponViewWidth.constant = WIDTH * fullWidth
         updataView()
     }
 //    closeStoreCouponWidrh
