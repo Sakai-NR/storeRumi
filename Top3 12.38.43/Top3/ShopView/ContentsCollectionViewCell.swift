@@ -42,6 +42,10 @@ class ContentsCollectionViewCell: BaseCollectionViewCell {
 extension ContentsCollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
+        CornerUpdata()
+        labelUpdata()
+
+
     }
 }
 
@@ -52,7 +56,30 @@ extension ContentsCollectionViewCell {
 
 // MARK: - method
 extension ContentsCollectionViewCell {
-    func labelsUpdata(){
+    
+    func CornerUpdata(){
+        prodactView.layer.cornerRadius = 10
+        productImageView.layer.cornerRadius = 10
+        productImageView.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMinYCorner]
+        goodImage.layer.cornerRadius = 15
+    }
+    func labelUpdata(){
+        priceLabel.textColor = UIColor.red
+//        taxLabel
+        taxLabel.text = "税込み"
+//        postLabel
+        postLabel.text = "送料込み"
+        postLabel.layer.borderWidth = 1
+        postLabel.layer.borderColor = UIColor.gray.cgColor
+        postLabel.layer.cornerRadius = 2
+        postLabel.clipsToBounds = true
+//        comentLabel
+        commentLabel.layer.borderWidth = 1
+        commentLabel.layer.borderColor = UIColor.red.cgColor
+        commentLabel.backgroundColor = UIColor.red
+        commentLabel.textColor = UIColor.white
+        commentLabel.layer.cornerRadius = 2
+        commentLabel.clipsToBounds = true
         
     }
     

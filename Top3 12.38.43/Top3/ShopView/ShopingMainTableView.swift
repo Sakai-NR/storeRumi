@@ -48,9 +48,14 @@ extension ShopingMainTableView: UITableViewDataSource{
             return cell
         case 2:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ContentsTableViewCell", for: indexPath)as? ContentsTableViewCell else{return UITableViewCell()}
+            cell.contentsLabel.text = "人気ランキング！！"
             return cell
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ContenrtsTableCollectionViewCell", for: indexPath)as? ContenrtsTableCollectionViewCell else {return UITableViewCell()}
+            return cell
+        case 4:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ContentsTableViewCell", for: indexPath)as? ContentsTableViewCell else {return UITableViewCell()}
+            cell.contentsLabel.text = "おすすめの商品！！"
             return cell
             
         default:
