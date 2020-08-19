@@ -22,7 +22,10 @@
                     </searchBar>
                 </subviews>
             </tableViewCellContentView>
-            <point key="canvasLocation" x="-15" y="51"/>
+            <connections>
+                <outlet property="shopSarchBar" destination="g9k-bW-GRm" id="7k7-Dw-JAH"/>
+            </connections>
+            <point key="canvasLocation" x="13" y="92"/>
         </tableViewCell>
     </objects>
 </document>

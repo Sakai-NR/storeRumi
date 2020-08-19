@@ -34,7 +34,7 @@
                     <constraint firstItem="QWB-vs-S0F" firstAttribute="leading" secondItem="9aO-GI-rgi" secondAttribute="leading" constant="16" id="BGL-m1-8s3"/>
                     <constraint firstAttribute="bottom" secondItem="QWB-vs-S0F" secondAttribute="bottom" constant="16" id="DTa-ct-v4W"/>
                     <constraint firstItem="QWB-vs-S0F" firstAttribute="top" secondItem="9aO-GI-rgi" secondAttribute="top" constant="16" id="fcI-2n-jjl"/>
-                    <constraint firstAttribute="trailing" secondItem="QWB-vs-S0F" secondAttribute="trailing" constant="16" id="reU-Ln-Vvq"/>
+                    <constraint firstAttribute="trailing" secondItem="QWB-vs-S0F" secondAttribute="trailing" constant="16" id="jAv-ia-gfY"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

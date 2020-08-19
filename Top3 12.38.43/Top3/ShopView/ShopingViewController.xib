@@ -26,16 +26,22 @@
                         <constraint firstAttribute="height" constant="100" id="D93-mN-2iJ"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RWd-cX-wEN" customClass="ShopingMainTableView" customModule="Top3" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="108" width="414" height="788"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RWd-cX-wEN" customClass="ShopingMainTableView" customModule="Top3" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="100" width="414" height="796"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="414" id="tVc-TC-36A"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="RWd-cX-wEN" firstAttribute="top" secondItem="dem-uI-pOL" secondAttribute="bottom" id="Auv-SB-NOF"/>
+                <constraint firstItem="RWd-cX-wEN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KuM-S0-v26"/>
+                <constraint firstItem="RWd-cX-wEN" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Sqv-4R-EWa"/>
                 <constraint firstItem="dem-uI-pOL" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="TAI-lH-jk8"/>
                 <constraint firstItem="dem-uI-pOL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Tt4-2M-8Br"/>
+                <constraint firstAttribute="bottom" secondItem="RWd-cX-wEN" secondAttribute="bottom" id="hLb-M8-9gb"/>
                 <constraint firstItem="dem-uI-pOL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zlE-IV-9h9"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

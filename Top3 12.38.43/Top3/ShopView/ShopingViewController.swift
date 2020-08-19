@@ -23,6 +23,7 @@ extension ShopingViewController {
         super.loadView()
         setDelegate()
         setButton()
+        
     }
     
     override func viewDidLoad() {
@@ -32,6 +33,7 @@ extension ShopingViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
+    
 }
 
 // MARK: - Protocol
