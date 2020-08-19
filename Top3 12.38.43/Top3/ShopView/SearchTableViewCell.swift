@@ -27,18 +27,21 @@ class SearchTableViewCell: BaseTableViewCell ,UISearchBarDelegate{
 extension SearchTableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.shopSarchBar.endEditing(true)
         shopSarchBar.delegate = self
+        shopSarchBar.placeholder = "商品検索"
     }
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar){
 //        print("end searching --> Close Keyboard")
         self.shopSarchBar.endEditing(true)
     }
-    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
-        self.shopSarchBar.endEditing(true)
-        shopSarchBar.resignFirstResponder()
-        return true
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar){
+        shopSarchBar.setShowsCancelButton(true, animated: true)
     }
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        shopSarchBar.resignFirstResponder()
+        shopSarchBar.setShowsCancelButton(false, animated: true)
+    }
+    
     
 }
 
