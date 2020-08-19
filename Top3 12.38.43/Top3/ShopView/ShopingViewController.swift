@@ -23,6 +23,7 @@ extension ShopingViewController {
         super.loadView()
         setDelegate()
         setButton()
+        hideKeybord()
         
     }
     
@@ -67,6 +68,14 @@ extension ShopingViewController {
         headerView.backButtonOutlet.isHidden = false
         headerView.menuButtonOutlet.isHidden = true
     }
-    
+    func hideKeybord() {
+        let hideTap : UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKyeboardTap))
+        hideTap.numberOfTapsRequired = 1
+        self.view.isUserInteractionEnabled = true
+        self.view.addGestureRecognizer(hideTap)
+    }
+    @objc func hideKyeboardTap(recognizer : UITapGestureRecognizer){
+        self.view.endEditing(true)
+    }
 }
 
