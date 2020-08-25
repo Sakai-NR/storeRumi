@@ -1,8 +1,8 @@
 //
-//  ContenrtsTableCollectionViewCell.swift
+//  RecommendTableCollectionView.swift
 //  Top3
 //
-//  Created by 酒井典昭 on 2020/07/28.
+//  Created by 酒井典昭 on 2020/08/24.
 //  Copyright © 2020 典昭酒井. All rights reserved.
 //
 
@@ -10,19 +10,18 @@ import UIKit
 import PGFramework
 
 
-protocol ContenrtsTableCollectionViewCellDelegate: NSObjectProtocol{
+protocol RecommendTableCollectionViewDelegate: NSObjectProtocol{
     
 }
 
-extension ContenrtsTableCollectionViewCellDelegate {
+extension RecommendTableCollectionViewDelegate {
     
 }
 // MARK: - Property
-class ContenrtsTableCollectionViewCell: BaseTableViewCell {
-    weak var delegate: ContenrtsTableCollectionViewCellDelegate? = nil
-   
-    @IBOutlet weak var contentsCollectionView: UICollectionView!
-    @IBOutlet weak var contensCollectionVewFlowLayout: UICollectionViewFlowLayout!
+class RecommendTableCollectionView: BaseTableViewCell {
+    weak var delegate: RecommendTableCollectionViewDelegate? = nil
+    @IBOutlet weak var recommendCollectionView: UICollectionView!
+    @IBOutlet weak var recommendCollectionViewFlowLayout: UICollectionViewFlowLayout!
     var brandName :[String] = ["ブランド名","ブランド名","ブランド名","ブランド名","ブランド名","ブランド名",]
     var itemName : [String] = ["商品名","商品名","商品名","商品名","商品名","商品名",]
     var price : [String] = ["¥1,000","¥2,000","¥3,000","¥4,000","¥5,000","¥6,000",]
@@ -33,38 +32,41 @@ class ContenrtsTableCollectionViewCell: BaseTableViewCell {
 }
 
 // MARK: - Life cycle
-extension ContenrtsTableCollectionViewCell {
+extension RecommendTableCollectionView {
     override func awakeFromNib() {
         super.awakeFromNib()
-        contentsCollectionView.dataSource = self
-        loadCollectionViewCellFromXib(collectionView: contentsCollectionView, cellName: "ContentsCollectionViewCell")
+        recommendCollectionView.dataSource = self
+        loadCollectionViewCellFromXib(collectionView: recommendCollectionView, cellName: "RecommendTableCollectionViewCell")
     }
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        contensCollectionVewFlowLayout.itemSize = CGSize(width: contentsCollectionView.frame.width/2.2, height: contentsCollectionView.frame.height)
+        recommendCollectionViewFlowLayout.itemSize = CGSize(width: recommendCollectionView.frame.width/2.2, height: recommendCollectionView.frame.height)
     }
-    
 }
 
 // MARK: - Protocol
-extension ContenrtsTableCollectionViewCell :UICollectionViewDataSource{
+extension RecommendTableCollectionView:UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return brandName.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentsCollectionViewCell", for: indexPath)as? ContentsCollectionViewCell else {return UICollectionViewCell()}
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendTableCollectionViewCell", for: indexPath)as? RecommendTableCollectionViewCell else {return UICollectionViewCell()}
         cell.brandLabel.text = brandName[indexPath.row]
-        cell.ItemNamneLabel.text = itemName[indexPath.row]
+        cell.itemNameLabel.text = itemName[indexPath.row]
         cell.priceLabel.text = price[indexPath.row]
-        cell.starLabel.text = star[indexPath.row]
+        cell .taxLabel.text = tax[indexPath.row]
         cell.commentLabel.text = comment[indexPath.row]
+        cell.postLabel.text = "送料込み"
+        cell.starLabel.text = star[indexPath.row]
         return cell
     }
+    
+    
 }
 
 // MARK: - method
-extension ContenrtsTableCollectionViewCell {
+extension RecommendTableCollectionView {
     
 }
 
