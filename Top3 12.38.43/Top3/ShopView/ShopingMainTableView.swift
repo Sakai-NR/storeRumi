@@ -21,6 +21,7 @@ extension ShopingMainTableViewDelegate {
 class ShopingMainTableView: BaseView {
     weak var delegate: ShopingMainTableViewDelegate? = nil
     @IBOutlet weak var shopingTableView: UITableView!
+    var seachBar : UISearchBar = UISearchBar()
 }
 
 // MARK: - Life cycle
@@ -36,13 +37,14 @@ extension ShopingMainTableView {
 // MARK: - Protocol
 extension ShopingMainTableView: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 50
+        return 6
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "SearchTableViewCell", for: indexPath)as? SearchTableViewCell else{return UITableViewCell()}
+            seachBar = cell.shopSearchBar
             return cell
         case 1:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "BigImageTableViewCell", for: indexPath)as? BigImageTableViewCell else {return UITableViewCell()}
@@ -57,6 +59,9 @@ extension ShopingMainTableView: UITableViewDataSource{
         case 4:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ContentsTableViewCell", for: indexPath)as? ContentsTableViewCell else {return UITableViewCell()}
             cell.contentsLabel.text = "おすすめの商品！！"
+            return cell
+        case 5:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "RecommendTableCollectionView", for: indexPath)as? RecommendTableCollectionView else {return UITableViewCell()}
             return cell
             
         default:
@@ -74,6 +79,8 @@ extension ShopingMainTableView {
         loadTableViewCellFromXib(tableView: shopingTableView, cellName: "BigImageTableViewCell")
         loadTableViewCellFromXib(tableView: shopingTableView, cellName: "ContentsTableViewCell")
         loadTableViewCellFromXib(tableView: shopingTableView, cellName: "ContenrtsTableCollectionViewCell")
+        loadTableViewCellFromXib(tableView: shopingTableView, cellName: "RecommendTableCollectionView")
+        
     }
 }
 

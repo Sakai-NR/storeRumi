@@ -23,7 +23,7 @@
                 </subviews>
             </tableViewCellContentView>
             <connections>
-                <outlet property="shopSarchBar" destination="g9k-bW-GRm" id="7k7-Dw-JAH"/>
+                <outlet property="shopSearchBar" destination="g9k-bW-GRm" id="KDt-Wk-fu1"/>
             </connections>
             <point key="canvasLocation" x="13" y="92"/>
         </tableViewCell>

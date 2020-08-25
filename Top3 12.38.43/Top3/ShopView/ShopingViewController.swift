@@ -38,7 +38,7 @@ extension ShopingViewController {
 }
 
 // MARK: - Protocol
-extension ShopingViewController:HeaderViewDelegate {
+extension ShopingViewController:HeaderViewDelegate{
     func menuButton(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
         animatorManager.navigationType = .slide_push
@@ -73,9 +73,12 @@ extension ShopingViewController {
         hideTap.numberOfTapsRequired = 1
         self.view.isUserInteractionEnabled = true
         self.view.addGestureRecognizer(hideTap)
+        
     }
     @objc func hideKyeboardTap(recognizer : UITapGestureRecognizer){
         self.view.endEditing(true)
+        shopingMainTableView.seachBar.setShowsCancelButton(false, animated: true)
     }
+    
 }
 

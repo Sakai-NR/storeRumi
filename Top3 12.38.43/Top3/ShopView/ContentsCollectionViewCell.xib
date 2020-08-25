@@ -12,7 +12,7 @@
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="ePf-u2-vup" customClass="ContentsCollectionViewCell" customModule="Top3" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="271" height="322"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="a4S-f7-HuG">
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="a4S-f7-HuG">
                 <rect key="frame" x="0.0" y="0.0" width="271" height="322"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -145,12 +145,9 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="dji-kM-esU" firstAttribute="leading" secondItem="a4S-f7-HuG" secondAttribute="leading" id="5a5-dh-REh"/>
                     <constraint firstItem="dji-kM-esU" firstAttribute="top" secondItem="a4S-f7-HuG" secondAttribute="top" id="FAA-U3-3A6"/>
                     <constraint firstItem="dji-kM-esU" firstAttribute="leading" secondItem="a4S-f7-HuG" secondAttribute="leading" id="FdO-YA-GCn"/>
-                    <constraint firstItem="dji-kM-esU" firstAttribute="top" secondItem="a4S-f7-HuG" secondAttribute="top" id="IiO-nq-Cqg"/>
                     <constraint firstAttribute="trailing" secondItem="dji-kM-esU" secondAttribute="trailing" id="bCx-RY-HPd"/>
-                    <constraint firstAttribute="trailing" secondItem="dji-kM-esU" secondAttribute="trailing" id="c3S-yp-jpx"/>
                     <constraint firstAttribute="bottom" secondItem="dji-kM-esU" secondAttribute="bottom" id="zGQ-iC-4cw"/>
                 </constraints>
             </collectionViewCellContentView>

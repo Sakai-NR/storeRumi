@@ -42,8 +42,8 @@ class ContentsCollectionViewCell: BaseCollectionViewCell {
 extension ContentsCollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
-        CornerUpdata()
-        labelUpdata()
+        CornerUpdate()
+        labelUpdate()
 
 
     }
@@ -57,13 +57,13 @@ extension ContentsCollectionViewCell {
 // MARK: - method
 extension ContentsCollectionViewCell {
     
-    func CornerUpdata(){
+    func CornerUpdate(){
         prodactView.layer.cornerRadius = 10
         productImageView.layer.cornerRadius = 10
         productImageView.layer.maskedCorners = [.layerMinXMinYCorner,.layerMaxXMinYCorner]
         goodImage.layer.cornerRadius = 15
     }
-    func labelUpdata(){
+    func labelUpdate(){
         priceLabel.textColor = UIColor.red
 //        taxLabel
         taxLabel.text = "税込み"
