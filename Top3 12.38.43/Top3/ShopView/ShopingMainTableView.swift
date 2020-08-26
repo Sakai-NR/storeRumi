@@ -37,7 +37,7 @@ extension ShopingMainTableView {
 // MARK: - Protocol
 extension ShopingMainTableView: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return 8
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -63,6 +63,13 @@ extension ShopingMainTableView: UITableViewDataSource{
         case 5:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "RecommendTableCollectionView", for: indexPath)as? RecommendTableCollectionView else {return UITableViewCell()}
             return cell
+        case 6 :
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "ContentsTableViewCell", for: indexPath)as? ContentsTableViewCell else{return UITableViewCell()}
+            cell.contentsLabel.text = "NEW ITEM！！"
+            return cell
+        case 7:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "NewItemTableViewCell", for: indexPath)as? NewItemTableViewCell else {return UITableViewCell()}
+            return cell
             
         default:
             return UITableViewCell()
@@ -80,6 +87,7 @@ extension ShopingMainTableView {
         loadTableViewCellFromXib(tableView: shopingTableView, cellName: "ContentsTableViewCell")
         loadTableViewCellFromXib(tableView: shopingTableView, cellName: "ContenrtsTableCollectionViewCell")
         loadTableViewCellFromXib(tableView: shopingTableView, cellName: "RecommendTableCollectionView")
+        loadTableViewCellFromXib(tableView: shopingTableView, cellName: "NewItemTableViewCell")
         
     }
 }
