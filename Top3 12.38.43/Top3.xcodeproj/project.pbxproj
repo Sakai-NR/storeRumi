@@ -45,6 +45,8 @@
 		8FCA46BB24F368FC0047ADD2 /* RecommendTableCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46B924F368FC0047ADD2 /* RecommendTableCollectionViewCell.xib */; };
 		8FCA46BE24F36A720047ADD2 /* RecommendTableCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA46BC24F36A720047ADD2 /* RecommendTableCollectionView.swift */; };
 		8FCA46BF24F36A720047ADD2 /* RecommendTableCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46BD24F36A720047ADD2 /* RecommendTableCollectionView.xib */; };
+		8FCA46C224F4C0360047ADD2 /* NewItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA46C024F4C0360047ADD2 /* NewItemTableViewCell.swift */; };
+		8FCA46C324F4C0360047ADD2 /* NewItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46C124F4C0360047ADD2 /* NewItemTableViewCell.xib */; };
 		8FD03DBA24A24BD400217B54 /* StoreMenuDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD03DB824A24BD400217B54 /* StoreMenuDetailsView.swift */; };
 		8FD03DBB24A24BD400217B54 /* StoreMenuDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD03DB924A24BD400217B54 /* StoreMenuDetailsView.xib */; };
 		8FDC46D024B7D77200A9DE5A /* StoreCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC46CE24B7D77200A9DE5A /* StoreCouponViewController.swift */; };
@@ -111,6 +113,8 @@
 		8FCA46B924F368FC0047ADD2 /* RecommendTableCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendTableCollectionViewCell.xib; sourceTree = "<group>"; };
 		8FCA46BC24F36A720047ADD2 /* RecommendTableCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendTableCollectionView.swift; sourceTree = "<group>"; };
 		8FCA46BD24F36A720047ADD2 /* RecommendTableCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendTableCollectionView.xib; sourceTree = "<group>"; };
+		8FCA46C024F4C0360047ADD2 /* NewItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemTableViewCell.swift; sourceTree = "<group>"; };
+		8FCA46C124F4C0360047ADD2 /* NewItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewItemTableViewCell.xib; sourceTree = "<group>"; };
 		8FD03DB824A24BD400217B54 /* StoreMenuDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreMenuDetailsView.swift; sourceTree = "<group>"; };
 		8FD03DB924A24BD400217B54 /* StoreMenuDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreMenuDetailsView.xib; sourceTree = "<group>"; };
 		8FDC46CE24B7D77200A9DE5A /* StoreCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCouponViewController.swift; sourceTree = "<group>"; };
@@ -274,6 +278,8 @@
 				8FCA46BD24F36A720047ADD2 /* RecommendTableCollectionView.xib */,
 				8FCA46B824F368FC0047ADD2 /* RecommendTableCollectionViewCell.swift */,
 				8FCA46B924F368FC0047ADD2 /* RecommendTableCollectionViewCell.xib */,
+				8FCA46C024F4C0360047ADD2 /* NewItemTableViewCell.swift */,
+				8FCA46C124F4C0360047ADD2 /* NewItemTableViewCell.xib */,
 			);
 			path = ShopView;
 			sourceTree = "<group>";
@@ -358,6 +364,7 @@
 				8F5B9C0D23A72E9600469377 /* TopMainViewController.xib in Resources */,
 				8F5B9C0023A72E3C00469377 /* Assets.xcassets in Resources */,
 				8F5B9C1D23A7312E00469377 /* MenuView.xib in Resources */,
+				8FCA46C324F4C0360047ADD2 /* NewItemTableViewCell.xib in Resources */,
 				8FDC46D124B7D77200A9DE5A /* StoreCouponViewController.xib in Resources */,
 				8FE8811A23DFE1A9005180A3 /* MenuTableViewCell.xib in Resources */,
 				8FCA46A724CA8A540047ADD2 /* SearchTableViewCell.xib in Resources */,
@@ -438,6 +445,7 @@
 				8FDC46D824BEB07000A9DE5A /* CouponUsedView.swift in Sources */,
 				8FCA46BE24F36A720047ADD2 /* RecommendTableCollectionView.swift in Sources */,
 				8FCA46AE24CB1CAC0047ADD2 /* ContentsTableViewCell.swift in Sources */,
+				8FCA46C224F4C0360047ADD2 /* NewItemTableViewCell.swift in Sources */,
 				8F5B9C1423A72F9C00469377 /* MaskView.swift in Sources */,
 				8F5B9BF623A72E3C00469377 /* SceneDelegate.swift in Sources */,
 				8F5B9BFE23A72E3C00469377 /* Top3.xcdatamodeld in Sources */,
