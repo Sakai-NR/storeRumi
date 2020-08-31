@@ -47,6 +47,10 @@
 		8FCA46BF24F36A720047ADD2 /* RecommendTableCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46BD24F36A720047ADD2 /* RecommendTableCollectionView.xib */; };
 		8FCA46C224F4C0360047ADD2 /* NewItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA46C024F4C0360047ADD2 /* NewItemTableViewCell.swift */; };
 		8FCA46C324F4C0360047ADD2 /* NewItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46C124F4C0360047ADD2 /* NewItemTableViewCell.xib */; };
+		8FCA46C724FD23480047ADD2 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA46C524FD23480047ADD2 /* ItemViewController.swift */; };
+		8FCA46C824FD23480047ADD2 /* ItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46C624FD23480047ADD2 /* ItemViewController.xib */; };
+		8FCA46CB24FD345A0047ADD2 /* SampleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA46C924FD345A0047ADD2 /* SampleMainView.swift */; };
+		8FCA46CC24FD345A0047ADD2 /* SampleMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46CA24FD345A0047ADD2 /* SampleMainView.xib */; };
 		8FD03DBA24A24BD400217B54 /* StoreMenuDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD03DB824A24BD400217B54 /* StoreMenuDetailsView.swift */; };
 		8FD03DBB24A24BD400217B54 /* StoreMenuDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD03DB924A24BD400217B54 /* StoreMenuDetailsView.xib */; };
 		8FDC46D024B7D77200A9DE5A /* StoreCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC46CE24B7D77200A9DE5A /* StoreCouponViewController.swift */; };
@@ -115,6 +119,10 @@
 		8FCA46BD24F36A720047ADD2 /* RecommendTableCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendTableCollectionView.xib; sourceTree = "<group>"; };
 		8FCA46C024F4C0360047ADD2 /* NewItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemTableViewCell.swift; sourceTree = "<group>"; };
 		8FCA46C124F4C0360047ADD2 /* NewItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewItemTableViewCell.xib; sourceTree = "<group>"; };
+		8FCA46C524FD23480047ADD2 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		8FCA46C624FD23480047ADD2 /* ItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemViewController.xib; sourceTree = "<group>"; };
+		8FCA46C924FD345A0047ADD2 /* SampleMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleMainView.swift; sourceTree = "<group>"; };
+		8FCA46CA24FD345A0047ADD2 /* SampleMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleMainView.xib; sourceTree = "<group>"; };
 		8FD03DB824A24BD400217B54 /* StoreMenuDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreMenuDetailsView.swift; sourceTree = "<group>"; };
 		8FD03DB924A24BD400217B54 /* StoreMenuDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreMenuDetailsView.xib; sourceTree = "<group>"; };
 		8FDC46CE24B7D77200A9DE5A /* StoreCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCouponViewController.swift; sourceTree = "<group>"; };
@@ -216,8 +224,20 @@
 				8FDC46DF24C547DC00A9DE5A /* StoreMenuView */,
 				8FDC46DE24C5475D00A9DE5A /* CouponView */,
 				8FDC46E024C71E4200A9DE5A /* ShopView */,
+				8FCA46C424FCA8E20047ADD2 /* ItemView */,
 			);
 			path = Top3;
+			sourceTree = "<group>";
+		};
+		8FCA46C424FCA8E20047ADD2 /* ItemView */ = {
+			isa = PBXGroup;
+			children = (
+				8FCA46C524FD23480047ADD2 /* ItemViewController.swift */,
+				8FCA46C624FD23480047ADD2 /* ItemViewController.xib */,
+				8FCA46C924FD345A0047ADD2 /* SampleMainView.swift */,
+				8FCA46CA24FD345A0047ADD2 /* SampleMainView.xib */,
+			);
+			path = ItemView;
 			sourceTree = "<group>";
 		};
 		8FDC46DE24C5475D00A9DE5A /* CouponView */ = {
@@ -354,6 +374,7 @@
 				8FE8811623C43675005180A3 /* BsckView2.xib in Resources */,
 				8FCA46B724CFD63F0047ADD2 /* ContentsCollectionViewCell.xib in Resources */,
 				8F5B9C1523A72F9C00469377 /* MaskView.xib in Resources */,
+				8FCA46CC24FD345A0047ADD2 /* SampleMainView.xib in Resources */,
 				8FCA46A324C870270047ADD2 /* ShopingMainTableView.xib in Resources */,
 				8F5B9C1123A72EC500469377 /* TopMainView.xib in Resources */,
 				8FCA46BB24F368FC0047ADD2 /* RecommendTableCollectionViewCell.xib in Resources */,
@@ -365,6 +386,7 @@
 				8F5B9C0023A72E3C00469377 /* Assets.xcassets in Resources */,
 				8F5B9C1D23A7312E00469377 /* MenuView.xib in Resources */,
 				8FCA46C324F4C0360047ADD2 /* NewItemTableViewCell.xib in Resources */,
+				8FCA46C824FD23480047ADD2 /* ItemViewController.xib in Resources */,
 				8FDC46D124B7D77200A9DE5A /* StoreCouponViewController.xib in Resources */,
 				8FE8811A23DFE1A9005180A3 /* MenuTableViewCell.xib in Resources */,
 				8FCA46A724CA8A540047ADD2 /* SearchTableViewCell.xib in Resources */,
@@ -428,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FE8811523C43675005180A3 /* BsckView2.swift in Sources */,
+				8FCA46C724FD23480047ADD2 /* ItemViewController.swift in Sources */,
 				8FCA46A224C870270047ADD2 /* ShopingMainTableView.swift in Sources */,
 				8FDC46DC24BEB42F00A9DE5A /* CouponUsedViewController.swift in Sources */,
 				8FCA46B224CFD0580047ADD2 /* ContenrtsTableCollectionViewCell.swift in Sources */,
@@ -456,6 +479,7 @@
 				8FCA46B624CFD63F0047ADD2 /* ContentsCollectionViewCell.swift in Sources */,
 				8FCA46A624CA8A540047ADD2 /* SearchTableViewCell.swift in Sources */,
 				8F5B9C1823A7302000469377 /* HeaderView.swift in Sources */,
+				8FCA46CB24FD345A0047ADD2 /* SampleMainView.swift in Sources */,
 				8FCA46BA24F368FC0047ADD2 /* RecommendTableCollectionViewCell.swift in Sources */,
 				8FE8811923DFE1A9005180A3 /* MenuTableViewCell.swift in Sources */,
 			);

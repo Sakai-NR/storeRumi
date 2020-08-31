@@ -29,6 +29,7 @@ class NewItemTableViewCell: BaseTableViewCell {
 extension NewItemTableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
+        imageViewUpdate()
     }
 }
 
@@ -39,6 +40,9 @@ extension NewItemTableViewCell {
 
 // MARK: - method
 extension NewItemTableViewCell {
+    func imageViewUpdate(){
+        NewItemImageView.layer.cornerRadius = 10
+    }
     
 }
 
