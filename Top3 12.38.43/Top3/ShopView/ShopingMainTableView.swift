@@ -11,7 +11,7 @@ import PGFramework
 
 
 protocol ShopingMainTableViewDelegate: NSObjectProtocol{
-    
+    func selectedRow(indexpath:IndexPath)
 }
 
 extension ShopingMainTableViewDelegate {
@@ -30,6 +30,7 @@ extension ShopingMainTableView {
         super.awakeFromNib()
         tableViewSet()
         shopingTableView.dataSource = self
+        shopingTableView.delegate = self
     }
 }
 
@@ -69,14 +70,19 @@ extension ShopingMainTableView: UITableViewDataSource{
             return cell
         case 7:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "NewItemTableViewCell", for: indexPath)as? NewItemTableViewCell else {return UITableViewCell()}
+            cell.explanationLabel.text = "この夏おすすめのアイテム！！"
+            cell.dayLabel.text = "2020年８月２６日"
             return cell
             
         default:
             return UITableViewCell()
         }
     }
-    
-    
+}
+extension ShopingMainTableView:UITableViewDelegate{
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        delegate?.selectedRow(indexpath: indexPath)
+    }
 }
 
 // MARK: - method

@@ -56,13 +56,28 @@ extension ShopingViewController:HeaderViewDelegate{
 //        topMainViewController.openMenu()
         
     }
-    
 }
+extension ShopingViewController:ShopingMainTableViewDelegate{
+    func selectedRow(indexpath: IndexPath) {
+        switch indexpath.row {
+        case 2:
+//            print("1")
+            let itemViewController = ItemViewController()
+            transitionViewController(from: self, to: itemViewController)
+            animatorManager.navigationType = .slide_push
 
+            
+        default:
+            print("2")
+            
+        }
+    }
+}
 // MARK: - method
 extension ShopingViewController {
     func setDelegate(){
         headerView.delegate = self
+        shopingMainTableView.delegate = self
     }
     func setButton(){
         headerView.backButtonOutlet.isHidden = false
