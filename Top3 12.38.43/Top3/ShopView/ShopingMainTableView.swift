@@ -12,6 +12,8 @@ import PGFramework
 
 protocol ShopingMainTableViewDelegate: NSObjectProtocol{
     func selectedRow(indexpath:IndexPath)
+    func searchBarShouldBeginEditing()
+    func searchBarShouldEndEditing()
 }
 
 extension ShopingMainTableViewDelegate {
@@ -31,6 +33,7 @@ extension ShopingMainTableView {
         tableViewSet()
         shopingTableView.dataSource = self
         shopingTableView.delegate = self
+        
     }
 }
 
@@ -38,7 +41,7 @@ extension ShopingMainTableView {
 // MARK: - Protocol
 extension ShopingMainTableView: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -58,20 +61,28 @@ extension ShopingMainTableView: UITableViewDataSource{
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ContenrtsTableCollectionViewCell", for: indexPath)as? ContenrtsTableCollectionViewCell else {return UITableViewCell()}
             return cell
         case 4:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "AllItemTableViewCell", for: indexPath)as? AllItemTableViewCell else{return UITableViewCell()}
+            cell.allItemLabel.text = "全てをみ見る＞"
+            return cell
+        case 5:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ContentsTableViewCell", for: indexPath)as? ContentsTableViewCell else {return UITableViewCell()}
             cell.contentsLabel.text = "おすすめの商品！！"
             return cell
-        case 5:
+        case 6:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "RecommendTableCollectionView", for: indexPath)as? RecommendTableCollectionView else {return UITableViewCell()}
             return cell
-        case 6 :
+        case 7:
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: "AllItemTableViewCell", for: indexPath)as? AllItemTableViewCell else{return UITableViewCell()}
+            cell.allItemLabel.text = "全てをみ見る＞"
+            return cell
+        case 8 :
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ContentsTableViewCell", for: indexPath)as? ContentsTableViewCell else{return UITableViewCell()}
             cell.contentsLabel.text = "NEW ITEM！！"
             return cell
-        case 7:
+        case 9:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "NewItemTableViewCell", for: indexPath)as? NewItemTableViewCell else {return UITableViewCell()}
             cell.explanationLabel.text = "この夏おすすめのアイテム！！"
-            cell.dayLabel.text = "2020年８月２６日"
+            cell.dayLabel.text = "2020年８月26日"
             return cell
             
         default:
@@ -84,6 +95,18 @@ extension ShopingMainTableView:UITableViewDelegate{
         delegate?.selectedRow(indexpath: indexPath)
     }
 }
+extension ShopingMainTableView:SearchTableViewCellDelegate{
+    func searchBarShouldBeginEditing() {
+        delegate?.searchBarShouldBeginEditing()
+    }
+    
+    func searchBarShouldEndEditing() {
+        delegate?.searchBarShouldEndEditing()
+    }
+    
+    
+}
+   
 
 // MARK: - method
 extension ShopingMainTableView {
@@ -92,6 +115,7 @@ extension ShopingMainTableView {
         loadTableViewCellFromXib(tableView: shopingTableView, cellName: "BigImageTableViewCell")
         loadTableViewCellFromXib(tableView: shopingTableView, cellName: "ContentsTableViewCell")
         loadTableViewCellFromXib(tableView: shopingTableView, cellName: "ContenrtsTableCollectionViewCell")
+        loadTableViewCellFromXib(tableView: shopingTableView, cellName: "AllItemTableViewCell")
         loadTableViewCellFromXib(tableView: shopingTableView, cellName: "RecommendTableCollectionView")
         loadTableViewCellFromXib(tableView: shopingTableView, cellName: "NewItemTableViewCell")
         

@@ -51,6 +51,10 @@
 		8FCA46C824FD23480047ADD2 /* ItemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46C624FD23480047ADD2 /* ItemViewController.xib */; };
 		8FCA46CB24FD345A0047ADD2 /* SampleMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA46C924FD345A0047ADD2 /* SampleMainView.swift */; };
 		8FCA46CC24FD345A0047ADD2 /* SampleMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46CA24FD345A0047ADD2 /* SampleMainView.xib */; };
+		8FCA46CF24FE87330047ADD2 /* AllItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA46CD24FE87330047ADD2 /* AllItemTableViewCell.swift */; };
+		8FCA46D024FE87330047ADD2 /* AllItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46CE24FE87330047ADD2 /* AllItemTableViewCell.xib */; };
+		8FCA46D32501E92D0047ADD2 /* ItemSmallCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCA46D12501E92D0047ADD2 /* ItemSmallCollectionViewCell.swift */; };
+		8FCA46D42501E92D0047ADD2 /* ItemSmallCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCA46D22501E92D0047ADD2 /* ItemSmallCollectionViewCell.xib */; };
 		8FD03DBA24A24BD400217B54 /* StoreMenuDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD03DB824A24BD400217B54 /* StoreMenuDetailsView.swift */; };
 		8FD03DBB24A24BD400217B54 /* StoreMenuDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FD03DB924A24BD400217B54 /* StoreMenuDetailsView.xib */; };
 		8FDC46D024B7D77200A9DE5A /* StoreCouponViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FDC46CE24B7D77200A9DE5A /* StoreCouponViewController.swift */; };
@@ -123,6 +127,10 @@
 		8FCA46C624FD23480047ADD2 /* ItemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemViewController.xib; sourceTree = "<group>"; };
 		8FCA46C924FD345A0047ADD2 /* SampleMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleMainView.swift; sourceTree = "<group>"; };
 		8FCA46CA24FD345A0047ADD2 /* SampleMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SampleMainView.xib; sourceTree = "<group>"; };
+		8FCA46CD24FE87330047ADD2 /* AllItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllItemTableViewCell.swift; sourceTree = "<group>"; };
+		8FCA46CE24FE87330047ADD2 /* AllItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllItemTableViewCell.xib; sourceTree = "<group>"; };
+		8FCA46D12501E92D0047ADD2 /* ItemSmallCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSmallCollectionViewCell.swift; sourceTree = "<group>"; };
+		8FCA46D22501E92D0047ADD2 /* ItemSmallCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemSmallCollectionViewCell.xib; sourceTree = "<group>"; };
 		8FD03DB824A24BD400217B54 /* StoreMenuDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreMenuDetailsView.swift; sourceTree = "<group>"; };
 		8FD03DB924A24BD400217B54 /* StoreMenuDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoreMenuDetailsView.xib; sourceTree = "<group>"; };
 		8FDC46CE24B7D77200A9DE5A /* StoreCouponViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCouponViewController.swift; sourceTree = "<group>"; };
@@ -296,10 +304,14 @@
 				8FCA46B524CFD63F0047ADD2 /* ContentsCollectionViewCell.xib */,
 				8FCA46BC24F36A720047ADD2 /* RecommendTableCollectionView.swift */,
 				8FCA46BD24F36A720047ADD2 /* RecommendTableCollectionView.xib */,
+				8FCA46D12501E92D0047ADD2 /* ItemSmallCollectionViewCell.swift */,
+				8FCA46D22501E92D0047ADD2 /* ItemSmallCollectionViewCell.xib */,
 				8FCA46B824F368FC0047ADD2 /* RecommendTableCollectionViewCell.swift */,
 				8FCA46B924F368FC0047ADD2 /* RecommendTableCollectionViewCell.xib */,
 				8FCA46C024F4C0360047ADD2 /* NewItemTableViewCell.swift */,
 				8FCA46C124F4C0360047ADD2 /* NewItemTableViewCell.xib */,
+				8FCA46CD24FE87330047ADD2 /* AllItemTableViewCell.swift */,
+				8FCA46CE24FE87330047ADD2 /* AllItemTableViewCell.xib */,
 			);
 			path = ShopView;
 			sourceTree = "<group>";
@@ -375,6 +387,7 @@
 				8FCA46B724CFD63F0047ADD2 /* ContentsCollectionViewCell.xib in Resources */,
 				8F5B9C1523A72F9C00469377 /* MaskView.xib in Resources */,
 				8FCA46CC24FD345A0047ADD2 /* SampleMainView.xib in Resources */,
+				8FCA46D42501E92D0047ADD2 /* ItemSmallCollectionViewCell.xib in Resources */,
 				8FCA46A324C870270047ADD2 /* ShopingMainTableView.xib in Resources */,
 				8F5B9C1123A72EC500469377 /* TopMainView.xib in Resources */,
 				8FCA46BB24F368FC0047ADD2 /* RecommendTableCollectionViewCell.xib in Resources */,
@@ -390,6 +403,7 @@
 				8FDC46D124B7D77200A9DE5A /* StoreCouponViewController.xib in Resources */,
 				8FE8811A23DFE1A9005180A3 /* MenuTableViewCell.xib in Resources */,
 				8FCA46A724CA8A540047ADD2 /* SearchTableViewCell.xib in Resources */,
+				8FCA46D024FE87330047ADD2 /* AllItemTableViewCell.xib in Resources */,
 				8FDC46DD24BEB42F00A9DE5A /* CouponUsedViewController.xib in Resources */,
 				8F5B9BFB23A72E3C00469377 /* Main.storyboard in Resources */,
 				8FCA46AF24CB1CAC0047ADD2 /* ContentsTableViewCell.xib in Resources */,
@@ -465,6 +479,7 @@
 				8FFD18E723B06FA400450A86 /* BackView.swift in Sources */,
 				8FDC46D024B7D77200A9DE5A /* StoreCouponViewController.swift in Sources */,
 				8F5B9C0C23A72E9600469377 /* TopMainViewController.swift in Sources */,
+				8FCA46CF24FE87330047ADD2 /* AllItemTableViewCell.swift in Sources */,
 				8FDC46D824BEB07000A9DE5A /* CouponUsedView.swift in Sources */,
 				8FCA46BE24F36A720047ADD2 /* RecommendTableCollectionView.swift in Sources */,
 				8FCA46AE24CB1CAC0047ADD2 /* ContentsTableViewCell.swift in Sources */,
@@ -472,6 +487,7 @@
 				8F5B9C1423A72F9C00469377 /* MaskView.swift in Sources */,
 				8F5B9BF623A72E3C00469377 /* SceneDelegate.swift in Sources */,
 				8F5B9BFE23A72E3C00469377 /* Top3.xcdatamodeld in Sources */,
+				8FCA46D32501E92D0047ADD2 /* ItemSmallCollectionViewCell.swift in Sources */,
 				8F5B9C1023A72EC500469377 /* TopMainView.swift in Sources */,
 				8FC6D59224A5786600C7E83A /* StoreCouponTableViewCell.swift in Sources */,
 				8FCA46AA24CA8F470047ADD2 /* BigImageTableViewCell.swift in Sources */,

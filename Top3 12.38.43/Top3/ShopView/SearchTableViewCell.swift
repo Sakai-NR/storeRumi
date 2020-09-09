@@ -11,7 +11,8 @@ import PGFramework
 
 
 protocol SearchTableViewCellDelegate: NSObjectProtocol{
-    
+    func searchBarShouldBeginEditing()
+    func searchBarShouldEndEditing()
 }
 
 extension SearchTableViewCellDelegate {
@@ -41,6 +42,14 @@ extension SearchTableViewCell {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         shopSearchBar.resignFirstResponder()
         shopSearchBar.setShowsCancelButton(false, animated: true)
+    }
+    func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool{
+        delegate?.searchBarShouldBeginEditing()
+        return true
+    }
+    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool{
+        delegate?.searchBarShouldEndEditing()
+        return true
     }
     
     
