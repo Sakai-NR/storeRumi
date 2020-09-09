@@ -12,7 +12,8 @@ import PGFramework
 
 // MARK: - Property
 class ItemViewController: BaseViewController {
-    @IBOutlet weak var sampleMainview: SampleMainView!
+    @IBOutlet weak var sampleMainView: SampleMainView!
+    @IBOutlet weak var headerView: HeaderView!
     
 }
 
@@ -20,6 +21,8 @@ class ItemViewController: BaseViewController {
 extension ItemViewController {
     override func loadView() {
         super.loadView()
+        setDeleate()
+        setButton()
     }
     
     override func viewDidLoad() {
@@ -32,12 +35,33 @@ extension ItemViewController {
 }
 
 // MARK: - Protocol
-extension ItemViewController {
+extension ItemViewController:HeaderViewDelegate {
+    func menuButton(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+        animatorManager.navigationType = .slide_push
+    }
+    
+    func memberButton(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+        animatorManager.navigationType = .slide_push
+    }
+    
+    func BackButton(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+        animatorManager.navigationType = .slide_pop
+    }
+    
     
 }
 
 // MARK: - method
 extension ItemViewController {
-    
+    func setDeleate(){
+        headerView.delegate = self
+    }
+    func setButton(){
+    headerView.backButtonOutlet.isHidden = false
+    headerView.menuButtonOutlet.isHidden = true
+    }
 }
 

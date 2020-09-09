@@ -9,7 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemViewController" customModule="Top3" customModuleProvider="target">
             <connections>
-                <outlet property="sampleMainview" destination="AUt-G9-oWc" id="8oE-7d-D18"/>
+                <outlet property="headerView" destination="VRc-T6-h8a" id="e9j-GI-8n2"/>
+                <outlet property="sampleMainView" destination="7eR-fM-Qh3" id="r4G-Su-YY4"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,15 +19,30 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AUt-G9-oWc" customClass="SampleMainView" customModule="Top3" customModuleProvider="target">
-                    <rect key="frame" x="87" y="395" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRc-T6-h8a" customClass="HeaderView" customModule="Top3" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Hoa-dt-yuB"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7eR-fM-Qh3" customClass="SampleMainView" customModule="Top3" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="100" width="414" height="796"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7eR-fM-Qh3" secondAttribute="bottom" id="5cT-Kc-GvD"/>
+                <constraint firstItem="VRc-T6-h8a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JeZ-aH-49V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="7eR-fM-Qh3" secondAttribute="trailing" id="JoM-re-0zK"/>
+                <constraint firstItem="VRc-T6-h8a" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Sc9-me-HUx"/>
+                <constraint firstItem="VRc-T6-h8a" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UlF-Zk-80i"/>
+                <constraint firstItem="7eR-fM-Qh3" firstAttribute="top" secondItem="VRc-T6-h8a" secondAttribute="bottom" id="hhr-ek-GHU"/>
+                <constraint firstItem="7eR-fM-Qh3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mME-2F-2dn"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="120"/>
+            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
         </view>
     </objects>
 </document>

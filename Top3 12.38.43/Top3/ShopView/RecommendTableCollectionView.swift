@@ -36,7 +36,7 @@ extension RecommendTableCollectionView {
     override func awakeFromNib() {
         super.awakeFromNib()
         recommendCollectionView.dataSource = self
-        loadCollectionViewCellFromXib(collectionView: recommendCollectionView, cellName: "RecommendTableCollectionViewCell")
+        loadCollectionViewCellFromXib(collectionView: recommendCollectionView, cellName: "ItemSmallCollectionViewCell")
     }
     override func draw(_ rect: CGRect) {
         super.draw(rect)
@@ -51,14 +51,14 @@ extension RecommendTableCollectionView:UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecommendTableCollectionViewCell", for: indexPath)as? RecommendTableCollectionViewCell else {return UICollectionViewCell()}
-        cell.brandLabel.text = brandName[indexPath.row]
-        cell.itemNameLabel.text = itemName[indexPath.row]
-        cell.priceLabel.text = price[indexPath.row]
-        cell .taxLabel.text = tax[indexPath.row]
-        cell.commentLabel.text = comment[indexPath.row]
-        cell.postLabel.text = "送料込み"
-        cell.starLabel.text = star[indexPath.row]
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemSmallCollectionViewCell", for: indexPath)as? ItemSmallCollectionViewCell else {return UICollectionViewCell()}
+//        cell.brandLabel.text = brandName[indexPath.row]
+//        cell.itemNameLabel.text = itemName[indexPath.row]
+//        cell.priceLabel.text = price[indexPath.row]
+//        cell .taxLabel.text = tax[indexPath.row]
+//        cell.commentLabel.text = comment[indexPath.row]
+//        cell.postLabel.text = "送料込み"
+//        cell.starLabel.text = star[indexPath.row]
         return cell
     }
     

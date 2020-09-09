@@ -14,6 +14,7 @@ import PGFramework
 class ShopingViewController: BaseViewController {
     @IBOutlet weak var headerView: HeaderView!
     @IBOutlet weak var shopingMainTableView: ShopingMainTableView!
+    var hideTap : UITapGestureRecognizer = UITapGestureRecognizer()
     
 }
 
@@ -23,7 +24,6 @@ extension ShopingViewController {
         super.loadView()
         setDelegate()
         setButton()
-        hideKeybord()
         
     }
     
@@ -58,14 +58,20 @@ extension ShopingViewController:HeaderViewDelegate{
     }
 }
 extension ShopingViewController:ShopingMainTableViewDelegate{
+    func searchBarShouldBeginEditing() {
+        hideKeybord()
+    }
+    
+    func searchBarShouldEndEditing() {
+        removeTapGesture()
+    }
+    
     func selectedRow(indexpath: IndexPath) {
         switch indexpath.row {
-        case 2:
-//            print("1")
+        case 1:
             let itemViewController = ItemViewController()
             transitionViewController(from: self, to: itemViewController)
             animatorManager.navigationType = .slide_push
-
             
         default:
             print("2")
@@ -84,7 +90,7 @@ extension ShopingViewController {
         headerView.menuButtonOutlet.isHidden = true
     }
     func hideKeybord() {
-        let hideTap : UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKyeboardTap))
+        hideTap = UITapGestureRecognizer(target: self, action: #selector(hideKyeboardTap))
         hideTap.numberOfTapsRequired = 1
         self.view.isUserInteractionEnabled = true
         self.view.addGestureRecognizer(hideTap)
@@ -94,6 +100,8 @@ extension ShopingViewController {
         self.view.endEditing(true)
         shopingMainTableView.seachBar.setShowsCancelButton(false, animated: true)
     }
-    
+    func removeTapGesture() {
+        self.view.removeGestureRecognizer(hideTap)
+    }
 }
 
