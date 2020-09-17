@@ -16,10 +16,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="QWB-vs-S0F">
-                        <rect key="frame" x="16" y="16" width="300" height="250"/>
+                        <rect key="frame" x="16" y="16" width="300" height="230"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="250" id="doX-hC-7rg"/>
+                            <constraint firstAttribute="height" constant="230" id="doX-hC-7rg"/>
                             <constraint firstAttribute="width" constant="300" id="fE6-q9-RkX"/>
                         </constraints>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="LRX-pQ-Xrg">

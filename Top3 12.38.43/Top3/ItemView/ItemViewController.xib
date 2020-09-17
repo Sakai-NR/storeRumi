@@ -10,7 +10,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ItemViewController" customModule="Top3" customModuleProvider="target">
             <connections>
                 <outlet property="headerView" destination="VRc-T6-h8a" id="e9j-GI-8n2"/>
-                <outlet property="sampleMainView" destination="7eR-fM-Qh3" id="r4G-Su-YY4"/>
+                <outlet property="itemView" destination="7eR-fM-Qh3" id="33N-iQ-I9M"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -26,7 +26,7 @@
                         <constraint firstAttribute="height" constant="100" id="Hoa-dt-yuB"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7eR-fM-Qh3" customClass="SampleMainView" customModule="Top3" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7eR-fM-Qh3" customClass="ItemTableView" customModule="Top3" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="100" width="414" height="796"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>

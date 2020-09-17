@@ -12,7 +12,8 @@ import PGFramework
 
 // MARK: - Property
 class ItemViewController: BaseViewController {
-    @IBOutlet weak var sampleMainView: SampleMainView!
+ 
+    @IBOutlet weak var itemView: ItemTableView!
     @IBOutlet weak var headerView: HeaderView!
     
 }

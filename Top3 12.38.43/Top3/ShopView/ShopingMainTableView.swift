@@ -14,6 +14,7 @@ protocol ShopingMainTableViewDelegate: NSObjectProtocol{
     func selectedRow(indexpath:IndexPath)
     func searchBarShouldBeginEditing()
     func searchBarShouldEndEditing()
+    func selectedCollectionView(indexpath:IndexPath)
 }
 
 extension ShopingMainTableViewDelegate {
@@ -103,10 +104,13 @@ extension ShopingMainTableView:SearchTableViewCellDelegate{
     func searchBarShouldEndEditing() {
         delegate?.searchBarShouldEndEditing()
     }
-    
-    
 }
-   
+extension ShopingMainTableView:ContenrtsTableCollectionViewCellDelegate{
+    func selectedCollectionView(indexpath: IndexPath) {
+        delegate?.selectedCollectionView(indexpath: indexpath)
+    }
+}
+
 
 // MARK: - method
 extension ShopingMainTableView {
