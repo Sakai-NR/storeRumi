@@ -58,6 +58,18 @@ extension ShopingViewController:HeaderViewDelegate{
     }
 }
 extension ShopingViewController:ShopingMainTableViewDelegate{
+    func selectedCollectionView(indexpath: IndexPath) {
+        switch indexpath.row {
+        case 1:
+            let Itemvc = ItemViewController()
+            transitionViewController(from: self, to: Itemvc)
+            animatorManager.navigationType = .slide_pop
+        default:
+            print("3")
+        }
+
+    }
+    
     func searchBarShouldBeginEditing() {
         hideKeybord()
     }
@@ -79,11 +91,14 @@ extension ShopingViewController:ShopingMainTableViewDelegate{
         }
     }
 }
+
+
 // MARK: - method
 extension ShopingViewController {
     func setDelegate(){
         headerView.delegate = self
         shopingMainTableView.delegate = self
+        
     }
     func setButton(){
         headerView.backButtonOutlet.isHidden = false
