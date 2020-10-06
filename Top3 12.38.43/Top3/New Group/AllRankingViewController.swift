@@ -1,8 +1,8 @@
 //
-//  ItemViewController.swift
+//  AllRankingViewController.swift
 //  Top3
 //
-//  Created by 酒井典昭 on 2020/08/31.
+//  Created by 酒井典昭 on 2020/09/18.
 //  Copyright © 2020 典昭酒井. All rights reserved.
 //
 
@@ -11,18 +11,17 @@ import PGFramework
 
 
 // MARK: - Property
-class ItemViewController: BaseViewController {
- 
-    @IBOutlet weak var itemView: ItemTableView!
+class AllRankingViewController: BaseViewController {
     @IBOutlet weak var headerView: HeaderView!
+    @IBOutlet weak var allRankingMainView: AllItemTableViewCell!
     
 }
 
 // MARK: - Life cycle
-extension ItemViewController {
+extension AllRankingViewController {
     override func loadView() {
         super.loadView()
-        setDeleate()
+        setView()
         setButton()
     }
     
@@ -36,7 +35,7 @@ extension ItemViewController {
 }
 
 // MARK: - Protocol
-extension ItemViewController:HeaderViewDelegate {
+extension AllRankingViewController:HeaderViewDelegate {
     func menuButton(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
         animatorManager.navigationType = .slide_push
@@ -51,13 +50,11 @@ extension ItemViewController:HeaderViewDelegate {
         navigationController?.popViewController(animated: true)
         animatorManager.navigationType = .slide_pop
     }
-    
-    
 }
 
 // MARK: - method
-extension ItemViewController {
-    func setDeleate(){
+extension AllRankingViewController {
+    func setView(){
         headerView.delegate = self
     }
     func setButton(){

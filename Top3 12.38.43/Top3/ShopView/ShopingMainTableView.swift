@@ -60,6 +60,7 @@ extension ShopingMainTableView: UITableViewDataSource{
             return cell
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ContenrtsTableCollectionViewCell", for: indexPath)as? ContenrtsTableCollectionViewCell else {return UITableViewCell()}
+            cell.delegate = self
             return cell
         case 4:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "AllItemTableViewCell", for: indexPath)as? AllItemTableViewCell else{return UITableViewCell()}
