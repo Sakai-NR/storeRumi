@@ -39,10 +39,14 @@ extension ItemTableView:UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath)as? ItemTableViewCell else {return UITableViewCell()}
-        return cell
+        switch indexPath.row {
+        case 0:
+             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath)as? ItemTableViewCell else {return UITableViewCell()}
+                   return cell
+        default:
+            return UITableViewCell()
+        }
     }
-    
 }
 
 // MARK: - method

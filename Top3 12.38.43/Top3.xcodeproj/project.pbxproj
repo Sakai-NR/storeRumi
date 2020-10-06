@@ -71,6 +71,14 @@
 		8FE64F1F250EDFFF0067502C /* ItemTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE64F1D250EDFFF0067502C /* ItemTableView.xib */; };
 		8FE64F22250EE6FD0067502C /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE64F20250EE6FD0067502C /* ItemTableViewCell.swift */; };
 		8FE64F23250EE6FD0067502C /* ItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE64F21250EE6FD0067502C /* ItemTableViewCell.xib */; };
+		8FE64F27251464080067502C /* AllRankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE64F25251464080067502C /* AllRankingViewController.swift */; };
+		8FE64F28251464080067502C /* AllRankingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE64F26251464080067502C /* AllRankingViewController.xib */; };
+		8FE64F2B251464740067502C /* AllRankingMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE64F29251464740067502C /* AllRankingMainView.swift */; };
+		8FE64F2C251464740067502C /* AllRankingMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE64F2A251464740067502C /* AllRankingMainView.xib */; };
+		8FE64F2F2522DD700067502C /* AllRankingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE64F2D2522DD6F0067502C /* AllRankingCollectionViewCell.swift */; };
+		8FE64F302522DD700067502C /* AllRankingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE64F2E2522DD700067502C /* AllRankingCollectionViewCell.xib */; };
+		8FE64F332522DEAF0067502C /* AllRankingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE64F312522DEAF0067502C /* AllRankingTableViewCell.swift */; };
+		8FE64F342522DEAF0067502C /* AllRankingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE64F322522DEAF0067502C /* AllRankingTableViewCell.xib */; };
 		8FE8811523C43675005180A3 /* BsckView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8811323C43675005180A3 /* BsckView2.swift */; };
 		8FE8811623C43675005180A3 /* BsckView2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FE8811423C43675005180A3 /* BsckView2.xib */; };
 		8FE8811923DFE1A9005180A3 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FE8811723DFE1A9005180A3 /* MenuTableViewCell.swift */; };
@@ -151,6 +159,14 @@
 		8FE64F1D250EDFFF0067502C /* ItemTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableView.xib; sourceTree = "<group>"; };
 		8FE64F20250EE6FD0067502C /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 		8FE64F21250EE6FD0067502C /* ItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemTableViewCell.xib; sourceTree = "<group>"; };
+		8FE64F25251464080067502C /* AllRankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRankingViewController.swift; sourceTree = "<group>"; };
+		8FE64F26251464080067502C /* AllRankingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllRankingViewController.xib; sourceTree = "<group>"; };
+		8FE64F29251464740067502C /* AllRankingMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRankingMainView.swift; sourceTree = "<group>"; };
+		8FE64F2A251464740067502C /* AllRankingMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllRankingMainView.xib; sourceTree = "<group>"; };
+		8FE64F2D2522DD6F0067502C /* AllRankingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRankingCollectionViewCell.swift; sourceTree = "<group>"; };
+		8FE64F2E2522DD700067502C /* AllRankingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllRankingCollectionViewCell.xib; sourceTree = "<group>"; };
+		8FE64F312522DEAF0067502C /* AllRankingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllRankingTableViewCell.swift; sourceTree = "<group>"; };
+		8FE64F322522DEAF0067502C /* AllRankingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllRankingTableViewCell.xib; sourceTree = "<group>"; };
 		8FE8811323C43675005180A3 /* BsckView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BsckView2.swift; sourceTree = "<group>"; };
 		8FE8811423C43675005180A3 /* BsckView2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BsckView2.xib; sourceTree = "<group>"; };
 		8FE8811723DFE1A9005180A3 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -240,12 +256,13 @@
 				8FDC46DF24C547DC00A9DE5A /* StoreMenuView */,
 				8FDC46DE24C5475D00A9DE5A /* CouponView */,
 				8FDC46E024C71E4200A9DE5A /* ShopView */,
-				8FCA46C424FCA8E20047ADD2 /* ItemView */,
+				8FE64F24251463D10067502C /* New Group */,
+				8FCA46C424FCA8E20047ADD2 /* AllItemView */,
 			);
 			path = Top3;
 			sourceTree = "<group>";
 		};
-		8FCA46C424FCA8E20047ADD2 /* ItemView */ = {
+		8FCA46C424FCA8E20047ADD2 /* AllItemView */ = {
 			isa = PBXGroup;
 			children = (
 				8FCA46C524FD23480047ADD2 /* ItemViewController.swift */,
@@ -254,8 +271,10 @@
 				8FE64F1D250EDFFF0067502C /* ItemTableView.xib */,
 				8FE64F20250EE6FD0067502C /* ItemTableViewCell.swift */,
 				8FE64F21250EE6FD0067502C /* ItemTableViewCell.xib */,
+				8FCA46B424CFD63F0047ADD2 /* ContentsCollectionViewCell.swift */,
+				8FCA46B524CFD63F0047ADD2 /* ContentsCollectionViewCell.xib */,
 			);
-			path = ItemView;
+			path = AllItemView;
 			sourceTree = "<group>";
 		};
 		8FDC46DE24C5475D00A9DE5A /* CouponView */ = {
@@ -312,8 +331,6 @@
 				8FCA46B124CFD0580047ADD2 /* ContenrtsTableCollectionViewCell.xib */,
 				8FCA46D52509D86B0047ADD2 /* ContentsSmallCollectionViewCell.swift */,
 				8FCA46D62509D86B0047ADD2 /* ContentsSmallCollectionViewCell.xib */,
-				8FCA46B424CFD63F0047ADD2 /* ContentsCollectionViewCell.swift */,
-				8FCA46B524CFD63F0047ADD2 /* ContentsCollectionViewCell.xib */,
 				8FCA46BC24F36A720047ADD2 /* RecommendTableCollectionView.swift */,
 				8FCA46BD24F36A720047ADD2 /* RecommendTableCollectionView.xib */,
 				8FCA46D12501E92D0047ADD2 /* ItemSmallCollectionViewCell.swift */,
@@ -326,6 +343,21 @@
 				8FCA46CE24FE87330047ADD2 /* AllItemTableViewCell.xib */,
 			);
 			path = ShopView;
+			sourceTree = "<group>";
+		};
+		8FE64F24251463D10067502C /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				8FE64F25251464080067502C /* AllRankingViewController.swift */,
+				8FE64F26251464080067502C /* AllRankingViewController.xib */,
+				8FE64F29251464740067502C /* AllRankingMainView.swift */,
+				8FE64F2A251464740067502C /* AllRankingMainView.xib */,
+				8FE64F312522DEAF0067502C /* AllRankingTableViewCell.swift */,
+				8FE64F322522DEAF0067502C /* AllRankingTableViewCell.xib */,
+				8FE64F2D2522DD6F0067502C /* AllRankingCollectionViewCell.swift */,
+				8FE64F2E2522DD700067502C /* AllRankingCollectionViewCell.xib */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -401,6 +433,7 @@
 				8FE8811623C43675005180A3 /* BsckView2.xib in Resources */,
 				8FCA46B724CFD63F0047ADD2 /* ContentsCollectionViewCell.xib in Resources */,
 				8F5B9C1523A72F9C00469377 /* MaskView.xib in Resources */,
+				8FE64F2C251464740067502C /* AllRankingMainView.xib in Resources */,
 				8FCA46D42501E92D0047ADD2 /* ItemSmallCollectionViewCell.xib in Resources */,
 				8FCA46A324C870270047ADD2 /* ShopingMainTableView.xib in Resources */,
 				8F5B9C1123A72EC500469377 /* TopMainView.xib in Resources */,
@@ -409,8 +442,11 @@
 				8FCA46BF24F36A720047ADD2 /* RecommendTableCollectionView.xib in Resources */,
 				8F5B9C0323A72E3C00469377 /* LaunchScreen.storyboard in Resources */,
 				8FD03DBB24A24BD400217B54 /* StoreMenuDetailsView.xib in Resources */,
+				8FE64F302522DD700067502C /* AllRankingCollectionViewCell.xib in Resources */,
 				8F5B9C0D23A72E9600469377 /* TopMainViewController.xib in Resources */,
 				8F5B9C0023A72E3C00469377 /* Assets.xcassets in Resources */,
+				8FE64F342522DEAF0067502C /* AllRankingTableViewCell.xib in Resources */,
+				8FE64F28251464080067502C /* AllRankingViewController.xib in Resources */,
 				8F5B9C1D23A7312E00469377 /* MenuView.xib in Resources */,
 				8FCA46C324F4C0360047ADD2 /* NewItemTableViewCell.xib in Resources */,
 				8FCA46C824FD23480047ADD2 /* ItemViewController.xib in Resources */,
@@ -480,12 +516,14 @@
 				8FE8811523C43675005180A3 /* BsckView2.swift in Sources */,
 				8FCA46C724FD23480047ADD2 /* ItemViewController.swift in Sources */,
 				8FE64F1E250EDFFF0067502C /* ItemTableView.swift in Sources */,
+				8FE64F2F2522DD700067502C /* AllRankingCollectionViewCell.swift in Sources */,
 				8FCA46A224C870270047ADD2 /* ShopingMainTableView.swift in Sources */,
 				8FDC46DC24BEB42F00A9DE5A /* CouponUsedViewController.swift in Sources */,
 				8FCA46B224CFD0580047ADD2 /* ContenrtsTableCollectionViewCell.swift in Sources */,
 				8F5B9BF423A72E3C00469377 /* AppDelegate.swift in Sources */,
 				8FEEC3F82490891000E8DA7D /* StoreMenuTableViewCell.swift in Sources */,
 				8FDC46D424B9BBBF00A9DE5A /* CouponDetailView.swift in Sources */,
+				8FE64F27251464080067502C /* AllRankingViewController.swift in Sources */,
 				8FE64F22250EE6FD0067502C /* ItemTableViewCell.swift in Sources */,
 				8F5B9C1C23A7312E00469377 /* MenuView.swift in Sources */,
 				8FD03DBA24A24BD400217B54 /* StoreMenuDetailsView.swift in Sources */,
@@ -493,12 +531,14 @@
 				8FC6D58E24A577E000C7E83A /* StoreCouponTableViewController.swift in Sources */,
 				8FDC46E324C71ECA00A9DE5A /* ShopingViewController.swift in Sources */,
 				8FFD18E723B06FA400450A86 /* BackView.swift in Sources */,
+				8FE64F332522DEAF0067502C /* AllRankingTableViewCell.swift in Sources */,
 				8FDC46D024B7D77200A9DE5A /* StoreCouponViewController.swift in Sources */,
 				8F5B9C0C23A72E9600469377 /* TopMainViewController.swift in Sources */,
 				8FCA46CF24FE87330047ADD2 /* AllItemTableViewCell.swift in Sources */,
 				8FDC46D824BEB07000A9DE5A /* CouponUsedView.swift in Sources */,
 				8FCA46BE24F36A720047ADD2 /* RecommendTableCollectionView.swift in Sources */,
 				8FCA46AE24CB1CAC0047ADD2 /* ContentsTableViewCell.swift in Sources */,
+				8FE64F2B251464740067502C /* AllRankingMainView.swift in Sources */,
 				8FCA46C224F4C0360047ADD2 /* NewItemTableViewCell.swift in Sources */,
 				8F5B9C1423A72F9C00469377 /* MaskView.swift in Sources */,
 				8FCA46D72509D86B0047ADD2 /* ContentsSmallCollectionViewCell.swift in Sources */,

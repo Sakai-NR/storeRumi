@@ -82,6 +82,9 @@ extension ContentsCollectionViewCell {
         commentLabel.clipsToBounds = true
         
     }
+    func brandNameUpdate(name:String){
+        brandLabel.text = name
+    }
     
 }
 

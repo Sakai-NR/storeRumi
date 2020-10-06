@@ -60,7 +60,7 @@ extension ShopingViewController:HeaderViewDelegate{
 extension ShopingViewController:ShopingMainTableViewDelegate{
     func selectedCollectionView(indexpath: IndexPath) {
         switch indexpath.row {
-        case 1:
+        case 0:
             let Itemvc = ItemViewController()
             transitionViewController(from: self, to: Itemvc)
             animatorManager.navigationType = .slide_pop
@@ -80,9 +80,9 @@ extension ShopingViewController:ShopingMainTableViewDelegate{
     
     func selectedRow(indexpath: IndexPath) {
         switch indexpath.row {
-        case 1:
-            let itemViewController = ItemViewController()
-            transitionViewController(from: self, to: itemViewController)
+        case 4:
+            let allRankingViewController = AllRankingViewController()
+            transitionViewController(from: self, to: allRankingViewController)
             animatorManager.navigationType = .slide_push
             
         default:
@@ -117,6 +117,15 @@ extension ShopingViewController {
     }
     func removeTapGesture() {
         self.view.removeGestureRecognizer(hideTap)
+    }
+    
+    func ttt(index : Int,vc : ItemViewController){
+        switch index {
+        case 0:
+            <#code#>
+        default:
+            <#code#>
+        }
     }
 }
 
