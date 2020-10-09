@@ -15,7 +15,7 @@ class ItemViewController: BaseViewController {
  
     @IBOutlet weak var itemView: ItemTableView!
     @IBOutlet weak var headerView: HeaderView!
-    var brandNames = ""
+    var brandName = ""
 }
 
 // MARK: - Life cycle
@@ -62,8 +62,8 @@ extension ItemViewController {
     headerView.backButtonOutlet.isHidden = false
     headerView.menuButtonOutlet.isHidden = true
     }
-//    func uuu(){
-//        ContentsCollectionViewCell.brandNameUpdate(name:brandNames)
-//    }
+    func uuu(name:String,vc:ContentsCollectionViewCell){
+        vc.brandNameUpdate(name: brandName)
+    }
 }
 
