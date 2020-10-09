@@ -63,6 +63,7 @@ extension ShopingViewController:ShopingMainTableViewDelegate{
         case 0:
             let Itemvc = ItemViewController()
             transitionViewController(from: self, to: Itemvc)
+            ttt(index:indexpath.row, itemvc: Itemvc)
             animatorManager.navigationType = .slide_pop
         default:
             print("3")
@@ -119,12 +120,15 @@ extension ShopingViewController {
         self.view.removeGestureRecognizer(hideTap)
     }
     
-    func ttt(index : Int,vc : ItemViewController){
+    func ttt(index : Int,itemvc : ItemViewController){
         switch index {
         case 0:
-            <#code#>
+            itemvc.brandName = "iiiiiii"
+        case 2:
+            itemvc.brandName = "222"
         default:
-            <#code#>
+            itemvc.brandName = "999"
+            
         }
     }
 }
