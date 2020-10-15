@@ -46,7 +46,7 @@ extension ItemTableViewCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentsCollectionViewCell", for: indexPath)as? ContentsCollectionViewCell else{return UICollectionViewCell()}
-        cell.brandNameUpdate(name: brandName)
+//        cell.brandNameUpdate(name: brandName)
         return cell
     }
 }

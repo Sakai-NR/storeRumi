@@ -61,9 +61,9 @@ extension ShopingViewController:ShopingMainTableViewDelegate{
     func selectedCollectionView(indexpath: IndexPath) {
         switch indexpath.row {
         case 0:
-            let Itemvc = ItemViewController()
-            transitionViewController(from: self, to: Itemvc)
-            ttt(index:indexpath.row, itemvc: Itemvc)
+            let itemViewController = ItemViewController()
+            transitionViewController(from: self, to: itemViewController)
+            ttt(index:indexpath.row, itemvc: itemViewController)
             animatorManager.navigationType = .slide_pop
         default:
             print("3")

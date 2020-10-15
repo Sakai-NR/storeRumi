@@ -16,6 +16,7 @@ class ItemViewController: BaseViewController {
     @IBOutlet weak var itemView: ItemTableView!
     @IBOutlet weak var headerView: HeaderView!
     var brandName = ""
+    var contentsCollectionViewCell = ContentsCollectionViewCell()
 }
 
 // MARK: - Life cycle
@@ -24,6 +25,7 @@ extension ItemViewController {
         super.loadView()
         setDeleate()
         setButton()
+        uuu()
     }
     
     override func viewDidLoad() {
@@ -62,8 +64,8 @@ extension ItemViewController {
     headerView.backButtonOutlet.isHidden = false
     headerView.menuButtonOutlet.isHidden = true
     }
-    func uuu(name:String,vc:ContentsCollectionViewCell){
-        vc.brandNameUpdate(name: brandName)
+    func uuu(){
+        contentsCollectionViewCell.brandNameUpdate(name: brandName)
     }
 }
 
