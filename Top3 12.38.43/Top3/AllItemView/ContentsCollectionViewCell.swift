@@ -44,8 +44,6 @@ extension ContentsCollectionViewCell {
         super.awakeFromNib()
         CornerUpdate()
         labelUpdate()
-
-
     }
 }
 
