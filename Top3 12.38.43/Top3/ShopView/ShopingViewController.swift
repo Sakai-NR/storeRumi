@@ -15,6 +15,7 @@ class ShopingViewController: BaseViewController {
     @IBOutlet weak var headerView: HeaderView!
     @IBOutlet weak var shopingMainTableView: ShopingMainTableView!
     var hideTap : UITapGestureRecognizer = UITapGestureRecognizer()
+    var itemNameLabels : [String] = ["AAA","BBB","CCC","DDD"]
     
 }
 
@@ -63,7 +64,12 @@ extension ShopingViewController:ShopingMainTableViewDelegate{
         case 0:
             let itemViewController = ItemViewController()
             transitionViewController(from: self, to: itemViewController)
-            ttt(index:indexpath.row, itemvc: itemViewController)
+            brandNameUpdate(index:indexpath.row, itemvc: itemViewController)
+            animatorManager.navigationType = .slide_pop
+        case 1 :
+            let itemViewController = ItemViewController()
+            transitionViewController(from: self, to: itemViewController)
+            brandNameUpdate(index:indexpath.row, itemvc: itemViewController)
             animatorManager.navigationType = .slide_pop
         default:
             print("3")
@@ -120,16 +126,19 @@ extension ShopingViewController {
         self.view.removeGestureRecognizer(hideTap)
     }
     
-    func ttt(index : Int,itemvc : ItemViewController){
+    func brandNameUpdate(index : Int,itemvc : ItemViewController){
         switch index {
         case 0:
-            itemvc.brandName = "iiiiiii"
-        case 2:
-            itemvc.brandName = "222"
+            itemvc.brandName = "BrandName0"
+        case 1:
+            itemvc.brandName = "BrandName1"
         default:
-            itemvc.brandName = "999"
+            itemvc.brandName = "BrandName3"
             
         }
+    }
+    func itemNameUpdate(){
+        
     }
 }
 

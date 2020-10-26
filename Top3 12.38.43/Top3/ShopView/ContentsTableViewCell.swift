@@ -21,6 +21,7 @@ extension ContentsTableViewCellDelegate {
 class ContentsTableViewCell: BaseTableViewCell {
     weak var delegate: ContentsTableViewCellDelegate? = nil
     @IBOutlet weak var contentsLabel: UILabel!
+    
 }
 
 // MARK: - Life cycle
@@ -28,12 +29,14 @@ extension ContentsTableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         cellUpdata()
+        
+        
     }
 }
 
 // MARK: - Protocol
 extension ContentsTableViewCell {
-    
+
 }
 
 // MARK: - method
