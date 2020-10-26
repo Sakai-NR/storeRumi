@@ -23,6 +23,7 @@ class ItemTableViewCell: BaseTableViewCell {
     @IBOutlet weak var allRankingCollectionView: UICollectionView!
     @IBOutlet weak var allRankingCollectionViewFlowLayout: UICollectionViewFlowLayout!
     var brandName = ""
+    var itemNameLabels = ""
     
 }
 
@@ -46,12 +47,11 @@ extension ItemTableViewCell: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentsCollectionViewCell", for: indexPath)as? ContentsCollectionViewCell else{return UICollectionViewCell()}
-//        cell.brandNameUpdate(name: brandName)
+        cell.brandNameUpdate(names: brandName)
+        cell.itemNameUpdate(name: itemNameLabels)
         return cell
     }
 }
-
-
 // MARK: - method
 extension ItemTableViewCell {
     func setUpdate(){

@@ -154,7 +154,7 @@
             <size key="customSize" width="271" height="322"/>
             <connections>
                 <outlet property="ItemNamneLabel" destination="j4W-fW-Q8I" id="qTs-y0-Imw"/>
-                <outlet property="brandLabel" destination="hz5-rK-isl" id="nrJ-oZ-1sf"/>
+                <outlet property="brandLabel" destination="hz5-rK-isl" id="3gM-AX-LmH"/>
                 <outlet property="commentLabel" destination="s9D-em-BDw" id="j7Z-Qv-a6k"/>
                 <outlet property="goodImage" destination="it5-zf-F9W" id="ixE-de-OSb"/>
                 <outlet property="postLabel" destination="Oah-8W-g5e" id="ew2-0i-kjd"/>

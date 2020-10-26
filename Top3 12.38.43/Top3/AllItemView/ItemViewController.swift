@@ -16,6 +16,7 @@ class ItemViewController: BaseViewController {
     @IBOutlet weak var itemView: ItemTableView!
     @IBOutlet weak var headerView: HeaderView!
     var brandName = ""
+    var itemNameLabels = ""
     var contentsCollectionViewCell = ContentsCollectionViewCell()
 }
 
@@ -25,7 +26,9 @@ extension ItemViewController {
         super.loadView()
         setDeleate()
         setButton()
-        uuu()
+        itemView.brandName = brandName
+        itemView.itemNameLabels = itemNameLabels
+//        uuu()
     }
     
     override func viewDidLoad() {
@@ -65,7 +68,7 @@ extension ItemViewController {
     headerView.menuButtonOutlet.isHidden = true
     }
     func uuu(){
-        contentsCollectionViewCell.brandNameUpdate(name: brandName)
+        contentsCollectionViewCell.brandNameUpdate(names: brandName)
     }
 }
 
