@@ -23,8 +23,12 @@ class ContenrtsTableCollectionViewCell: BaseTableViewCell {
    
     @IBOutlet weak var contentsCollectionView: UICollectionView!
     @IBOutlet weak var contensCollectionVewFlowLayout: UICollectionViewFlowLayout!
+    var itemName = ""
+    var prices = ""
+
+    
 //    var brandName :[String] = ["ブランド名","ブランド名","ブランド名","ブランド名","ブランド名","ブランド名",]
-    var itemNames: [String] = ["商品名","商品名","商品名","商品名","商品名","商品名",]
+    var itemNames: [String] = ["商品名1","商品名2","商品名3","商品名4","商品名5","商品名6",]
     var price : [String] = ["¥1,000","¥2,000","¥3,000","¥4,000","¥5,000","¥6,000",]
 //    var tax : [String] = ["","","","","","",]
 //    var comment : [String] = ["10%OFF","10%OFF","10%OFF","10%OFF","10%OFF","10%OFF",]
@@ -55,10 +59,11 @@ extension ContenrtsTableCollectionViewCell :UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentsSmallCollectionViewCell", for: indexPath)as? ContentsSmallCollectionViewCell else {return UICollectionViewCell()}
 //        cell.brandLabel.text = brandName[indexPath.row]
-        cell.itemName.text = itemNames[indexPath.row]
-        cell.priceLabel.text = price[indexPath.row]
+//        cell.itemNameLabel.text = itemNames[indexPath.row]
+//        cell.priceLabel.text = price[indexPath.row]
 //        cell.starLabel.text = star[indexPath.row]
 //        cell.commentLabel.text = comment[indexPath.row]
+        cell.getItem(itemName: itemNames[indexPath.row], price: price[indexPath.row], indexPath: indexPath)
         return cell
     }
 }

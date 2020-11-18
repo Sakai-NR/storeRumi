@@ -98,7 +98,7 @@
                 <outlet property="goodButtonOutlet" destination="ByL-NU-2Kd" id="LUf-WB-1tY"/>
                 <outlet property="goodImageView" destination="F8I-sx-Y3a" id="brZ-AY-lKR"/>
                 <outlet property="itemIamgeView" destination="d19-uV-lNI" id="nQ3-Um-5SF"/>
-                <outlet property="itemName" destination="HQk-Da-Sj1" id="qsP-j9-T7k"/>
+                <outlet property="itemNameLabel" destination="HQk-Da-Sj1" id="qsP-j9-T7k"/>
                 <outlet property="priceLabel" destination="Gvv-oN-KI0" id="klE-ld-wFN"/>
             </connections>
             <point key="canvasLocation" x="365.21739130434787" y="246.76339285714283"/>
