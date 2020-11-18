@@ -26,6 +26,7 @@ class ShopingMainTableView: BaseView {
     @IBOutlet weak var shopingTableView: UITableView!
     var seachBar : UISearchBar = UISearchBar()
     var itemNames = ""
+    var prices = ""
 }
 
 // MARK: - Life cycle
@@ -61,7 +62,7 @@ extension ShopingMainTableView: UITableViewDataSource{
             return cell
         case 3:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: "ContenrtsTableCollectionViewCell", for: indexPath)as? ContenrtsTableCollectionViewCell else {return UITableViewCell()}
-//            cell.itemNames = itemNames
+            cell.prices = prices
             cell.delegate = self
             return cell
         case 4:

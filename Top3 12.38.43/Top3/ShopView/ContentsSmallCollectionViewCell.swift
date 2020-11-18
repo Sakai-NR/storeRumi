@@ -23,7 +23,7 @@ class ContentsSmallCollectionViewCell: BaseCollectionViewCell {
     @IBOutlet weak var itemIamgeView: UIImageView!
     @IBOutlet weak var contentBackView: UIView!
     @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var itemName: UILabel!
+    @IBOutlet weak var itemNameLabel: UILabel!
     @IBOutlet weak var goodImageView: UIImageView!
     @IBAction func goodButton(_ sender: UIButton) {
     }
@@ -54,5 +54,9 @@ extension ContentsSmallCollectionViewCell {
         goodButtonOutlet.layer.cornerRadius = 15
     }
     
+    func getItem(itemName:String,price:String,indexPath:IndexPath){
+        priceLabel.text = price
+        itemNameLabel.text = itemName
+    }
 }
 

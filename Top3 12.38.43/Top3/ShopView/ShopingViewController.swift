@@ -15,7 +15,7 @@ class ShopingViewController: BaseViewController {
     @IBOutlet weak var headerView: HeaderView!
     @IBOutlet weak var shopingMainTableView: ShopingMainTableView!
     var hideTap : UITapGestureRecognizer = UITapGestureRecognizer()
-    var itemNameLabels : [String] = ["AAA","BBB","CCC","DDD"]
+//    var itemNameLabels : [String] = ["AAA","BBB","CCC","DDD"]
     
 }
 
@@ -65,6 +65,7 @@ extension ShopingViewController:ShopingMainTableViewDelegate{
             let itemViewController = ItemViewController()
             transitionViewController(from: self, to: itemViewController)
             brandNameUpdate(index:indexpath.row, itemvc: itemViewController)
+//            itemViewController.brandName = itemName[indexpath.row]
             animatorManager.navigationType = .slide_pop
         case 1 :
             let itemViewController = ItemViewController()
