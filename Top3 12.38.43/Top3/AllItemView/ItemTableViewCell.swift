@@ -23,8 +23,8 @@ class ItemTableViewCell: BaseTableViewCell {
     @IBOutlet weak var allRankingCollectionView: UICollectionView!
     @IBOutlet weak var allRankingCollectionViewFlowLayout: UICollectionViewFlowLayout!
     var brandName = ""
-    var itemNameLabels = ""
-    
+//    var itemNameLabels = ""
+    var contentsSmallCollectionViewCell = ContentsSmallCollectionViewCell()
 }
 
 // MARK: - Life cycle
@@ -48,7 +48,7 @@ extension ItemTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentsCollectionViewCell", for: indexPath)as? ContentsCollectionViewCell else{return UICollectionViewCell()}
         cell.brandNameUpdate(names: brandName)
-        cell.itemNameUpdate(name: itemNameLabels)
+//        cell.itemNameUpdate(name: itemNameLabels)
         return cell
     }
 }
@@ -58,4 +58,7 @@ extension ItemTableViewCell {
     allRankingCollectionView.dataSource = self
     loadCollectionViewCellFromXib(collectionView: allRankingCollectionView, cellName: "ContentsCollectionViewCell")
    }
+    func getItem(itemName: String, price: String, indexPath: IndexPath) {
+
+    }
 }

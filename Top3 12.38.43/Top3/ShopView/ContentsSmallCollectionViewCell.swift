@@ -28,7 +28,6 @@ class ContentsSmallCollectionViewCell: BaseCollectionViewCell {
     @IBAction func goodButton(_ sender: UIButton) {
     }
     @IBOutlet weak var goodButtonOutlet: UIButton!
-    
 }
 
 // MARK: - Life cycle
@@ -53,10 +52,9 @@ extension ContentsSmallCollectionViewCell {
         goodImageView.layer.cornerRadius = 15
         goodButtonOutlet.layer.cornerRadius = 15
     }
-    
-    func getItem(itemName:String,price:String,indexPath:IndexPath){
-        priceLabel.text = price
-        itemNameLabel.text = itemName
-    }
+    func getItem(itemName: String, price: String, indexPath: IndexPath) {
+//        itemNameLabel.text = itemName
+//        priceLabel.text = price
+       }
 }
 

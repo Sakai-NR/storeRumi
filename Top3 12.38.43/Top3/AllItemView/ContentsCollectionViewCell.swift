@@ -33,8 +33,7 @@ class ContentsCollectionViewCell: BaseCollectionViewCell {
     @IBOutlet weak var postLabel: UILabel!
     
     @IBOutlet weak var starLabel: UILabel!
-    
-
+    var contentsSmallCollectionViewCell = ContentsSmallCollectionViewCell()
     
 }
 
@@ -44,6 +43,7 @@ extension ContentsCollectionViewCell {
         super.awakeFromNib()
         CornerUpdate()
         labelUpdate()
+        
     }
 }
 
@@ -83,8 +83,13 @@ extension ContentsCollectionViewCell {
     func brandNameUpdate(names:String){
         brandLabel.text = names
     }
-    func itemNameUpdate(name:String){
-        ItemNamneLabel.text = name
+//    func itemNameUpdate(name:String){
+//        ItemNamneLabel.text = name
+//    }
+    func getItem(itemName: String, price: String, indexPath: IndexPath) {
+//        self.ItemNamneLabel.text = itemName
+//        self.priceLabel.text = price
+      
     }
 }
 
