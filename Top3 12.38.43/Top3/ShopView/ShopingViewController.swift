@@ -135,7 +135,7 @@ extension ShopingViewController {
             itemvc.brandName = "BrandName1"
         default:
             itemvc.brandName = "BrandName3"
-            
+
         }
     }
     func itemNameUpdate(){

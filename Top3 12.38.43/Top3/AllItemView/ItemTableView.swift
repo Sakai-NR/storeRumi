@@ -45,7 +45,7 @@ extension ItemTableView:UITableViewDataSource {
         case 0:
              guard let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath)as? ItemTableViewCell else {return UITableViewCell()}
                  cell.brandName = brandName
-                 cell.itemNameLabels = itemNameLabels
+//                 cell.itemNameLabels = itemNameLabels
                    return cell
         default:
             return UITableViewCell()

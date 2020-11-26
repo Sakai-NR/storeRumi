@@ -59,11 +59,10 @@ extension ContenrtsTableCollectionViewCell :UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentsSmallCollectionViewCell", for: indexPath)as? ContentsSmallCollectionViewCell else {return UICollectionViewCell()}
 //        cell.brandLabel.text = brandName[indexPath.row]
-//        cell.itemNameLabel.text = itemNames[indexPath.row]
-//        cell.priceLabel.text = price[indexPath.row]
+        cell.itemNameLabel.text = itemNames[indexPath.row]
+        cell.priceLabel.text = price[indexPath.row]
 //        cell.starLabel.text = star[indexPath.row]
 //        cell.commentLabel.text = comment[indexPath.row]
-        cell.getItem(itemName: itemNames[indexPath.row], price: price[indexPath.row], indexPath: indexPath)
         return cell
     }
 }

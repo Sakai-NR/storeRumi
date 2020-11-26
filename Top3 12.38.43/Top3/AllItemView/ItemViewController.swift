@@ -16,7 +16,7 @@ class ItemViewController: BaseViewController {
     @IBOutlet weak var itemView: ItemTableView!
     @IBOutlet weak var headerView: HeaderView!
     var brandName = ""
-    var itemNameLabels = ""
+//    var itemNameLabels = ""
     var contentsCollectionViewCell = ContentsCollectionViewCell()
 }
 
@@ -27,7 +27,7 @@ extension ItemViewController {
         setDeleate()
         setButton()
         itemView.brandName = brandName
-        itemView.itemNameLabels = itemNameLabels
+//        itemView.itemNameLabels = itemNameLabels
 //        uuu()
     }
     
