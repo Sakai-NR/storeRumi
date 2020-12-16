@@ -34,7 +34,7 @@ class ContentsCollectionViewCell: BaseCollectionViewCell {
     
     @IBOutlet weak var starLabel: UILabel!
     var contentsSmallCollectionViewCell = ContentsSmallCollectionViewCell()
-    
+    var indexPathRow = 0
 }
 
 // MARK: - Life cycle
@@ -90,6 +90,10 @@ extension ContentsCollectionViewCell {
 //        self.ItemNamneLabel.text = itemName
 //        self.priceLabel.text = price
       
+    }
+
+    func getIndexPathRow(indexPathRow: Int) {
+        self.indexPathRow = indexPathRow
     }
 }
 

@@ -60,22 +60,9 @@ extension ShopingViewController:HeaderViewDelegate{
 }
 extension ShopingViewController:ShopingMainTableViewDelegate{
     func selectedCollectionView(indexpath: IndexPath) {
-        switch indexpath.row {
-        case 0:
-            let itemViewController = ItemViewController()
-            transitionViewController(from: self, to: itemViewController)
-            brandNameUpdate(index:indexpath.row, itemvc: itemViewController)
-//            itemViewController.brandName = itemName[indexpath.row]
-            animatorManager.navigationType = .slide_pop
-        case 1 :
-            let itemViewController = ItemViewController()
-            transitionViewController(from: self, to: itemViewController)
-            brandNameUpdate(index:indexpath.row, itemvc: itemViewController)
-            animatorManager.navigationType = .slide_pop
-        default:
-            print("3")
-        }
-
+        let itemViewController = ItemViewController()
+        transitionViewController(from: self, to: itemViewController)
+        itemViewController.brandNameUpdate(index: indexpath.row)
     }
     
     func searchBarShouldBeginEditing() {
@@ -126,18 +113,7 @@ extension ShopingViewController {
     func removeTapGesture() {
         self.view.removeGestureRecognizer(hideTap)
     }
-    
-    func brandNameUpdate(index : Int,itemvc : ItemViewController){
-        switch index {
-        case 0:
-            itemvc.brandName = "BrandName0"
-        case 1:
-            itemvc.brandName = "BrandName1"
-        default:
-            itemvc.brandName = "BrandName3"
 
-        }
-    }
     func itemNameUpdate(){
         
     }

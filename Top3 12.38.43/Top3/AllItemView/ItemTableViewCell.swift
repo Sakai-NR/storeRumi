@@ -23,6 +23,7 @@ class ItemTableViewCell: BaseTableViewCell {
     @IBOutlet weak var allRankingCollectionView: UICollectionView!
     @IBOutlet weak var allRankingCollectionViewFlowLayout: UICollectionViewFlowLayout!
     var brandName = ""
+    var indexPathRow = 0
 //    var itemNameLabels = ""
     var contentsSmallCollectionViewCell = ContentsSmallCollectionViewCell()
 }
@@ -48,6 +49,7 @@ extension ItemTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentsCollectionViewCell", for: indexPath)as? ContentsCollectionViewCell else{return UICollectionViewCell()}
         cell.brandNameUpdate(names: brandName)
+        cell.getIndexPathRow(indexPathRow: indexPathRow)
 //        cell.itemNameUpdate(name: itemNameLabels)
         return cell
     }
@@ -60,5 +62,9 @@ extension ItemTableViewCell {
    }
     func getItem(itemName: String, price: String, indexPath: IndexPath) {
 
+    }
+
+    func getIndexPathRow(indexPathRow: Int) {
+        self.indexPathRow = indexPathRow
     }
 }

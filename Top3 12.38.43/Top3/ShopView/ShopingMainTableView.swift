@@ -118,6 +118,7 @@ extension ShopingMainTableView:ContenrtsTableCollectionViewCellDelegate{
 
 // MARK: - method
 extension ShopingMainTableView {
+
     func tableViewSet(){
         loadTableViewCellFromXib(tableView: shopingTableView, cellName: "SearchTableViewCell")
         loadTableViewCellFromXib(tableView: shopingTableView, cellName: "BigImageTableViewCell")

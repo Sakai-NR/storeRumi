@@ -23,6 +23,7 @@ class ItemTableView: BaseView {
     @IBOutlet weak var itameTableView: UITableView!
     var brandName = ""
     var itemNameLabels = ""
+    var indexPathRow = 0
 }
 
 // MARK: - Life cycle
@@ -45,6 +46,7 @@ extension ItemTableView:UITableViewDataSource {
         case 0:
              guard let cell = tableView.dequeueReusableCell(withIdentifier: "ItemTableViewCell", for: indexPath)as? ItemTableViewCell else {return UITableViewCell()}
                  cell.brandName = brandName
+            cell.getIndexPathRow(indexPathRow: indexPathRow)
 //                 cell.itemNameLabels = itemNameLabels
                    return cell
         default:

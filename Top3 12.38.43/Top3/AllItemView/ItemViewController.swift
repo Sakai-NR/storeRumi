@@ -16,6 +16,7 @@ class ItemViewController: BaseViewController {
     @IBOutlet weak var itemView: ItemTableView!
     @IBOutlet weak var headerView: HeaderView!
     var brandName = ""
+    var indexPathRow = 0
 //    var itemNameLabels = ""
     var contentsCollectionViewCell = ContentsCollectionViewCell()
 }
@@ -26,7 +27,8 @@ extension ItemViewController {
         super.loadView()
         setDeleate()
         setButton()
-        itemView.brandName = brandName
+
+//        itemView.brandName = brandName
 //        itemView.itemNameLabels = itemNameLabels
 //        uuu()
     }
@@ -37,6 +39,7 @@ extension ItemViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        itemView.indexPathRow = indexPathRow
     }
 }
 
@@ -69,6 +72,10 @@ extension ItemViewController {
     }
     func uuu(){
         contentsCollectionViewCell.brandNameUpdate(names: brandName)
+    }
+
+    func brandNameUpdate(index : Int) {
+        indexPathRow = index
     }
 }
 
