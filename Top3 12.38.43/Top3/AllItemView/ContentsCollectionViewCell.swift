@@ -91,6 +91,7 @@ extension ContentsCollectionViewCell {
 //        self.priceLabel.text = price
 //
 //        test
+//        test2
     }
 }
 
