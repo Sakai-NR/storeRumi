@@ -50,6 +50,7 @@ extension SearchTableViewCell {
     func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool{
         delegate?.searchBarShouldEndEditing()
         return true
+    
     }
     
     
