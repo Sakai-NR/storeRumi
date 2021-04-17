@@ -89,9 +89,8 @@ extension ContentsCollectionViewCell {
     func getItem(itemName: String, price: String, indexPath: IndexPath) {
 //        self.ItemNamneLabel.text = itemName
 //        self.priceLabel.text = price
-//pppppp
-//        ooooooo
-//        qqqqq
+
+//        rrrrrrr
     }
 }
 
