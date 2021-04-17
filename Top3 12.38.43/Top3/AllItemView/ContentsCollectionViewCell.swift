@@ -90,6 +90,7 @@ extension ContentsCollectionViewCell {
 //        self.ItemNamneLabel.text = itemName
 //        self.priceLabel.text = price
 //pppppp
+//        ooooooo
     }
 }
 
